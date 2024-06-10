@@ -1,4 +1,6 @@
-// @import "_swiper";
+@import "scss/home";
+@import "scss/header";
+@import "scss/footer";
 
 * {
     box-sizing: border-box;
@@ -8,4 +10,6 @@
 
 body {
     min-width: 320px;
+    background-color: rgba(255, 255, 255, 1);
+
 }
