@@ -58,11 +58,18 @@
   color: rgb(255, 255, 255);
 }
 .date input {
+  display: flex;
   width: 100%;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid rgb(190, 173, 142);
-  margin: 23px 0;
+  color: rgb(190, 173, 142);
+  outline: none;
+}
+.date ::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  background-color: chocolate;
+  font-size: xx-large;
 }
 .date button {
   background-color: rgb(190, 173, 142);

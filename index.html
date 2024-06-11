@@ -1,74 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hotel Miranda</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet">
-  <title>Hotel Miranda</title>
-</head>
+  <body>
+    <header class="header">
+      <img
+        id="menuBurguerSvg"
+        src="./svg/menuBurguer.svg"
+        class="header__menuBurguerSvg"
+        alt="menu burguer"
+      />
+      <section class="header__logo">
+        <a href="http://127.0.0.7:5500/" class="iconLogo">H</a>
+        <div class="nameHotel">
+          <p>HOTEL</p>
+          <p class="p2">MIRANDA</p>
+        </div>
+      </section>
 
-<body>
-  <header class="header">
-    <img id="menuBurguerSvg" src="./svg/menuBurguer.svg" class="header__menuBurguerSvg" alt="menu burguer" />
-    <section class="header__logo">
-      <a href="http://127.0.0.7:5500/" class="iconLogo">H</a>
-      <div class="nameHotel">
-        <p>HOTEL</p>
-        <p class="p2">MIRANDA</p>
-      </div>
+      <nav>
+        <ul id="menuBurguer" class="menuDesktop">
+          <li>
+            <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()"
+              >Rooms</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()"
+              >Offers</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="header__iconSvg">
+        <img src="./svg/account.svg" class="accountSvg" alt="account" />
+        <img src="./svg/search.svg" class="searchSvg" alt="search" />
+      </section>
+    </header>
+
+    <section class="info">
+      <p class="info__title">THE ULTIMATE LUXURY EXPERIENCE</p>
+      <p class="info__subTitle">The Perfect Base For You</p>
+      <button class="info__take">TAKE A TOUR</button>
+      <button class="info__learn">LEARN MORE</button>
     </section>
 
-    <nav>
-      <ul id="menuBurguer" class="menuDesktop">
-        <li>
-          <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()">About Us</a>
-        </li>
-        <li>
-          <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()">Rooms</a>
-        </li>
-        <li>
-          <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()">Offers</a>
-        </li>
-        <li>
-          <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <section class="header__iconSvg">
-      <img src="./svg/account.svg" class="accountSvg" alt="account" />
-      <img src="./svg/search.svg" class="searchSvg" alt="search" />
+    <section class="date">
+      <label>Arrival Date</label>
+      <input type="date" value="24th/march/2024" />
+      <label>Departure Date</label>
+      <input type="date" />
+      <button>CHECK AVAILABILITY</button>
     </section>
-  </header>
 
-  <section class="info">
-    <p class="info__title">THE ULTIMATE LUXURY EXPERIENCE</p>
-    <p class="info__subTitle">The Perfect Base For You</p>
-    <button class="info__take">TAKE A TOUR</button>
-    <button class="info__learn">LEARN MORE</button>
-  </section>
-  <section class="date">
-    <label>Arrival Date</label>
-    <input type="date">
-    <label>Departure Date</label>
-    <input type="date">
-    <button>CHECK AVAILABILITY</button>
-  </section>
+    <footer class="footer"></footer>
 
-
-
-
-  <footer class="footer"></footer>
-
-  <script src="./script.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-</body>
-
+    <script src="./script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  </body>
 </html>
