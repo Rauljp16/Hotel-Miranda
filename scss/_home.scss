@@ -1,0 +1,58 @@
+.info {
+    margin-top: 69px;
+    padding: 70px 20px;
+    background-color: rgba(51, 51, 51, 1);
+    color: rgba(255, 255, 255, 1);
+
+
+    &__title {
+        width: 70%;
+        font-family: "Archivo", sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 2.8px;
+        line-height: 18px;
+        margin-bottom: 38px;
+    }
+
+    &__subTitle {
+        font-family: "Old Standard TT", serif;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        margin-bottom: 38px;
+
+
+    }
+
+    &__take {
+        background-color: rgba(190, 173, 142, 1);
+        border: none;
+        color: rgba(255, 255, 255, 1);
+        width: 216px;
+        height: 60px;
+        font-family: "Archivo", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+        margin-bottom: 20px;
+        cursor: pointer;
+
+
+    }
+
+    &__learn {
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        color: rgba(255, 255, 255, 1);
+        width: 217px;
+        height: 60px;
+        font-family: "Archivo", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+        cursor: pointer;
+    }
+}

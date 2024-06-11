@@ -1,23 +1,93 @@
+.info {
+  margin-top: 69px;
+  padding: 70px 20px;
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+.info__title {
+  width: 70%;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  margin-bottom: 38px;
+}
+.info__subTitle {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+}
+.info__take {
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  width: 216px;
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.info__learn {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  color: rgb(255, 255, 255);
+  width: 217px;
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+}
+
 .header {
   position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   gap: 1em;
   width: 100%;
   height: 4.3em;
-  padding: 0 23px;
+  padding: 0 20px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+  background-color: rgb(255, 255, 255);
+}
+.header .menuDown {
+  display: block;
+  left: 0;
+  top: 67px;
+}
+.header__menuBurguerSvg {
+  cursor: pointer;
+  transition: transform 900ms;
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
 }
 .header nav ul {
-  border: 1px solid red;
+  width: 100%;
   position: absolute;
   display: none;
   left: 0;
-  top: 4.3em;
   list-style: none;
+  background-color: rgb(255, 255, 255);
+  padding: 8px 0;
 }
 .header nav ul li {
-  margin: 0.3em;
+  margin: 21px 16px;
+}
+.header nav ul li a {
   font-family: "Archivo", sans-serif;
   font-weight: 600;
 }
@@ -33,7 +103,8 @@
   justify-content: center;
   width: 36px;
   height: 36px;
-  box-shadow: 0px 14px 22px rgba(139, 139, 139, 0.25);
+  margin-left: 12px;
+  box-shadow: 0px 8px 10px rgba(139, 139, 139, 0.25);
   font-size: 18px;
 }
 .header__logo p {
@@ -49,7 +120,7 @@
 .header__iconSvg {
   position: absolute;
   display: flex;
-  width: 72px;
+  width: 70px;
   right: 23px;
   justify-content: space-between;
 }
