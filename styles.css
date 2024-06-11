@@ -48,6 +48,36 @@
   cursor: pointer;
 }
 
+.date {
+  background-color: rgb(34, 34, 34);
+  padding: 36px 20px;
+}
+.date label {
+  font-family: "roboto", sans-serif;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+}
+.date input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(190, 173, 142);
+  margin: 23px 0;
+}
+.date button {
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  width: 250px;
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+}
+
 .header {
   position: fixed;
   top: 0;
