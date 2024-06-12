@@ -1,95 +1,124 @@
 .info {
-  margin-top: 69px;
-  padding: 70px 20px;
-  background-color: rgba(51, 51, 51, 1);
-  color: rgba(255, 255, 255, 1);
-
-  &__title {
-    width: 70%;
-    font-family: "Archivo", sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    letter-spacing: 2.8px;
-    line-height: 18px;
-    margin-bottom: 38px;
-  }
-
-  &__subTitle {
-    font-family: "Old Standard TT", serif;
-    font-size: 56px;
-    line-height: 60px;
-    letter-spacing: -1.2px;
-    margin-bottom: 38px;
-  }
-
-  &__take {
-    background-color: rgba(190, 173, 142, 1);
-    border: none;
+    margin-top: 69px;
+    padding: 70px 20px;
+    background-color: rgba(51, 51, 51, 1);
     color: rgba(255, 255, 255, 1);
-    width: 216px;
-    height: 60px;
-    font-family: "Archivo", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 15px;
-    letter-spacing: 2.8px;
-    margin-bottom: 20px;
-    cursor: pointer;
-  }
 
-  &__learn {
-    background-color: transparent;
-    border: 2px solid rgba(255, 255, 255, 0.33);
-    color: rgba(255, 255, 255, 1);
-    width: 217px;
-    height: 60px;
-    font-family: "Archivo", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 15px;
-    letter-spacing: 2.8px;
-    cursor: pointer;
-  }
+    &__title {
+        width: 70%;
+        font-family: "Archivo", sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        letter-spacing: 2.8px;
+        line-height: 18px;
+        margin-bottom: 38px;
+    }
+
+    &__subTitle {
+        font-family: "Old Standard TT", serif;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2px;
+        margin-bottom: 38px;
+    }
+
+    &__take {
+        background-color: rgba(190, 173, 142, 1);
+        border: none;
+        color: rgba(255, 255, 255, 1);
+        width: 216px;
+        height: 60px;
+        font-family: "Archivo", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    &__learn {
+        background-color: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.33);
+        color: rgba(255, 255, 255, 1);
+        width: 217px;
+        height: 60px;
+        font-family: "Archivo", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+        cursor: pointer;
+    }
 }
 
 .date {
-  background-color: rgba(34, 34, 34, 1);
-  padding: 36px 20px;
+    position: relative;
+    background-color: rgba(34, 34, 34, 1);
+    padding: 36px 20px;
 
-  label {
-    font-family: "roboto", sans-serif;
-    line-height: 16px;
-    color: rgba(255, 255, 255, 1);
-  }
+    label {
+        font-family: "roboto", sans-serif;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 1);
+        width: 100%;
+    }
 
-  input {
-    display: flex;
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid rgba(190, 173, 142, 1);
-    // margin: 23px 0;
-    color: rgba(190, 173, 142, 1);
-    outline: none;
-    // margin-left: 50px;
-  }
-  ::-webkit-calendar-picker-indicator {
-    cursor: pointer;
-    background-color: chocolate;
-    font-size: xx-large;
-  }
+    input {
+        display: flex;
+        width: 100%;
+        max-width: 300px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(190, 173, 142, 1);
+        padding: 0 0 16px 40px;
+        color: rgba(104, 104, 104, 1);
+        outline: none;
+        margin: 20px 0 32px;
+        letter-spacing: 1px;
+        font-family: "roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 400;
 
-  button {
-    background-color: rgba(190, 173, 142, 1);
-    border: none;
-    color: rgba(255, 255, 255, 1);
-    width: 250px;
-    height: 60px;
-    font-family: "Archivo", sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 15px;
-    letter-spacing: 2.8px;
-    cursor: pointer;
-  }
+    }
+
+    ::-webkit-calendar-picker-indicator {
+        position: absolute;
+        left: 0;
+        cursor: pointer;
+        width: 88%;
+        margin-left: 15px;
+        opacity: 0;
+        background-color: aqua;
+    }
+
+    .calendarArrival {
+        position: absolute;
+        left: 20px;
+        top: 75px;
+        pointer-events: none;
+    }
+
+    .calendarDeparture {
+        position: absolute;
+        left: 20px;
+        top: 180px;
+        pointer-events: none;
+
+    }
+
+
+    button {
+        background-color: rgba(190, 173, 142, 1);
+        border: none;
+        color: rgba(255, 255, 255, 1);
+        width: 250px;
+        height: 60px;
+        font-family: "Archivo", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 15px;
+        letter-spacing: 2.8px;
+        cursor: pointer;
+    }
 }

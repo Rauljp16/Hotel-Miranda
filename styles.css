@@ -49,6 +49,7 @@
 }
 
 .date {
+  position: relative;
   background-color: rgb(34, 34, 34);
   padding: 36px 20px;
 }
@@ -56,20 +57,44 @@
   font-family: "roboto", sans-serif;
   line-height: 16px;
   color: rgb(255, 255, 255);
+  width: 100%;
 }
 .date input {
   display: flex;
   width: 100%;
+  max-width: 300px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid rgb(190, 173, 142);
-  color: rgb(190, 173, 142);
+  padding: 0 0 16px 40px;
+  color: rgb(104, 104, 104);
   outline: none;
+  margin: 20px 0 32px;
+  letter-spacing: 1px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 .date ::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
   cursor: pointer;
-  background-color: chocolate;
-  font-size: xx-large;
+  width: 88%;
+  margin-left: 15px;
+  opacity: 0;
+  background-color: aqua;
+}
+.date .calendarArrival {
+  position: absolute;
+  left: 20px;
+  top: 75px;
+  pointer-events: none;
+}
+.date .calendarDeparture {
+  position: absolute;
+  left: 20px;
+  top: 180px;
+  pointer-events: none;
 }
 .date button {
   background-color: rgb(190, 173, 142);
