@@ -235,8 +235,7 @@
 .aboutUsHome .team {
   position: relative;
   top: -118px;
-  width: 270px;
-  margin: 0 auto;
+  margin: 0 52px;
   box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
 }
 .aboutUsHome .team img {
@@ -277,40 +276,38 @@
   color: rgb(17, 17, 17);
   margin: 35px;
 }
-
-.roomsHome {
-  padding: 52px;
-}
-.roomsHome__luxury {
+.aboutUsHome__luxury {
   line-height: 0;
+  margin: 0 52px;
 }
-.roomsHome__luxury img {
+.aboutUsHome__luxury img {
   width: 270px;
   height: 300px;
 }
-.roomsHome__luxury div {
+.aboutUsHome__luxury div {
   width: 100%;
   height: 50%;
   text-align: center;
   background-color: rgb(34, 34, 34);
 }
-.roomsHome__luxury div .teamGold {
+.aboutUsHome__luxury div .teamGold {
   width: 68px;
   height: 50px;
   margin: 54px 0 25px;
 }
-.roomsHome__luxury div .info__title {
+.aboutUsHome__luxury div .info__title {
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.9px;
   margin: 0;
+  color: rgb(255, 255, 255);
 }
-.roomsHome__luxury div .textRoboto {
+.aboutUsHome__luxury div .textRoboto {
   font-family: "roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
   margin: 35px;
 }
 

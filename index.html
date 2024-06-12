@@ -1,116 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hotel Miranda</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles.css" />
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
-    rel="stylesheet" />
-  <title>Hotel Miranda</title>
-</head>
+  <body>
+    <header class="header">
+      <nav>
+        <img
+          id="menuBurguerSvg"
+          src="./svg/menuBurguer.svg"
+          class="header__menuBurguerSvg"
+          alt="menu burguer"
+        />
+        <section class="header__logo">
+          <a href="http://127.0.0.7:5500/" class="iconLogo">H</a>
+          <div class="nameHotel">
+            <p>HOTEL</p>
+            <p class="p2">MIRANDA</p>
+          </div>
+        </section>
 
-<body>
-  <header class="header">
-    <nav>
-      <img id="menuBurguerSvg" src="./svg/menuBurguer.svg" class="header__menuBurguerSvg" alt="menu burguer" />
-      <section class="header__logo">
-        <a href="http://127.0.0.7:5500/" class="iconLogo">H</a>
-        <div class="nameHotel">
-          <p>HOTEL</p>
-          <p class="p2">MIRANDA</p>
+        <ul id="menuBurguer" class="menuDesktop">
+          <li>
+            <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()"
+              >Rooms</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()"
+              >Offers</a
+            >
+          </li>
+          <li>
+            <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <section class="header__iconSvg">
+          <img src="./svg/account.svg" class="accountSvg" alt="account" />
+          <img src="./svg/search.svg" class="searchSvg" alt="search" />
+        </section>
+      </nav>
+    </header>
+
+    <section class="info">
+      <p class="info__subTitle">THE ULTIMATE LUXURY EXPERIENCE</p>
+      <p class="info__title">The Perfect Base For You</p>
+      <button class="info__take">TAKE A TOUR</button>
+      <button class="info__learn">LEARN MORE</button>
+    </section>
+
+    <section class="date">
+      <label>Arrival Date</label>
+      <img src="./svg/calendar.svg" class="calendarArrival" alt="account" />
+      <input type="date" />
+      <label>Departure Date</label>
+      <img src="./svg/calendar.svg" class="calendarDeparture" alt="account" />
+      <input type="date" />
+      <button>CHECK AVAILABILITY</button>
+    </section>
+    <section class="aboutUsHome">
+      <article class="info">
+        <p class="info__subTitle">ABOUT US</p>
+        <p class="info__title">Discover Our Underground.</p>
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <button>BOOK NOW</button>
+      </article>
+      <article class="team">
+        <div>
+          <img src="./images/1.webp" alt="pasillo hotel" />
         </div>
-      </section>
-
-      <ul id="menuBurguer" class="menuDesktop">
-        <li>
-          <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()">About Us</a>
-        </li>
-        <li>
-          <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()">Rooms</a>
-        </li>
-        <li>
-          <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()">Offers</a>
-        </li>
-        <li>
-          <a href="http://127.0.0.7:5500/about.html" onclick="toggleMenu()">Contact</a>
-        </li>
-      </ul>
-      <section class="header__iconSvg">
-        <img src="./svg/account.svg" class="accountSvg" alt="account" />
-        <img src="./svg/search.svg" class="searchSvg" alt="search" />
-      </section>
-    </nav>
-  </header>
-
-  <section class="info">
-    <p class="info__subTitle">THE ULTIMATE LUXURY EXPERIENCE</p>
-    <p class="info__title">The Perfect Base For You</p>
-    <button class="info__take">TAKE A TOUR</button>
-    <button class="info__learn">LEARN MORE</button>
-  </section>
-
-  <section class="date">
-    <label>Arrival Date</label>
-    <img src="./svg/calendar.svg" class="calendarArrival" alt="account" />
-    <input type="date" />
-    <label>Departure Date</label>
-    <img src="./svg/calendar.svg" class="calendarDeparture" alt="account" />
-    <input type="date" />
-    <button>CHECK AVAILABILITY</button>
-  </section>
-  <section class="aboutUsHome">
-    <article class="info">
-      <p class="info__subTitle">ABOUT US</p>
-      <p class="info__title">Discover Our Underground.</p>
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor
-        incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo
-        consequat.</p>
-      <button>BOOK NOW</button>
-    </article>
-    <article class="team">
+        <div>
+          <img src="./svg/teamGold.svg" class="teamGold" alt="account" />
+          <img src="./svg/teamGrey.svg" class="teamGrey" alt="account" />
+          <p class="info__title">Strong Team</p>
+          <p class="textRoboto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+      </article>
+      <article class="aboutUsHome__luxury">
+        <img src="./images/1.webp" alt="pasillo hotel" />
+        <div>
+          <img src="./svg/luxury.svg" class="teamGold" alt="luxury svg" />
+          <p class="info__title">Luxury Room</p>
+          <p class="textRoboto">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor.
+          </p>
+        </div>
+      </article>
+    </section>
+    <section class="roomsHome">
+      <p>ROOMS</p>
+      <p>Hand Picked Rooms</p>
       <div>
-        <img src="./images/1.webp" alt="pasillo hotel">
+        <img src="./svg/bed.svg" alt="" />
+        <img src="./svg/wifi.svg" alt="" />
+        <img src="./svg/car.svg" alt="" />
+        <img src="./svg/cold.svg" alt="" />
+        <img src="./svg/gym.svg" alt="" />
+        <img src="./svg/smoking.svg" alt="" />
+        <img src="./svg/cocktail.svg" alt="" />
       </div>
-      <div>
-        <img src="./svg/teamGold.svg" class="teamGold" alt="account" />
-        <img src="./svg/teamGrey.svg" class="teamGrey" alt="account" />
-        <p class="info__title">Strong Team</p>
-        <p class="textRoboto">Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor.</p>
-      </div>
-    </article>
-  </section>
-  <section class="roomsHome">
-    <article class="roomsHome__luxury">
-      <img src="./images/1.webp" alt="pasillo hotel">
-      <div>
-        <img src="./svg/luxury.svg" class="teamGold" alt="account" />
-        <p class="info__title">Luxury Room</p>
-        <p class="textRoboto">Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit, sed do eiusmod tempor.</p>
-      </div>
-    </article>
-  </section>
+    </section>
 
+    <footer class="footer"></footer>
 
-
-
-
-
-
-  <footer class="footer"></footer>
-
-  <script src="./script.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-</body>
-
+    <script src="./script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  </body>
 </html>
