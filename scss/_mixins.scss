@@ -1,0 +1,49 @@
+@mixin button ($color, $border) {
+    background-color: $color;
+    border: $border;
+    color: rgba(255, 255, 255, 1);
+    height: 60px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    cursor: pointer;
+}
+
+@mixin title ($color) {
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2px;
+    margin-bottom: 38px;
+    color: $color;
+
+}
+
+@mixin subTitleRoboto ($color) {
+    font-family: "roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color;
+
+}
+
+@mixin subTitleArchivo ($color) {
+    font-family: "Archivo", sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2.8px;
+    line-height: 18px;
+    margin-bottom: 38px;
+    color: $color;
+}
+
+@mixin textArchivo ($color) {
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $color;
+}

@@ -1,119 +1,9 @@
-.info {
-  margin-top: 69px;
-  padding: 70px 20px;
-  background-color: rgb(51, 51, 51);
-  color: rgb(255, 255, 255);
-}
-.info__title {
-  width: 70%;
-  font-family: "Archivo", sans-serif;
-  font-weight: 500;
-  font-size: 13px;
-  letter-spacing: 2.8px;
-  line-height: 18px;
-  margin-bottom: 38px;
-}
-.info__subTitle {
-  font-family: "Old Standard TT", serif;
-  font-size: 56px;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-  margin-bottom: 38px;
-}
-.info__take {
-  background-color: rgb(190, 173, 142);
-  border: none;
-  color: rgb(255, 255, 255);
-  width: 216px;
-  height: 60px;
-  font-family: "Archivo", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: 2.8px;
-  margin-bottom: 20px;
-  cursor: pointer;
-}
-.info__learn {
-  background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.33);
-  color: rgb(255, 255, 255);
-  width: 217px;
-  height: 60px;
-  font-family: "Archivo", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: 2.8px;
-  cursor: pointer;
-}
-
-.date {
-  position: relative;
-  background-color: rgb(34, 34, 34);
-  padding: 36px 20px;
-}
-.date label {
-  font-family: "roboto", sans-serif;
-  line-height: 16px;
-  color: rgb(255, 255, 255);
-  width: 100%;
-}
-.date input {
-  display: flex;
-  width: 100%;
-  max-width: 300px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid rgb(190, 173, 142);
-  padding: 0 0 16px 40px;
-  color: rgb(104, 104, 104);
-  outline: none;
-  margin: 20px 0 32px;
-  letter-spacing: 1px;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-}
-.date ::-webkit-calendar-picker-indicator {
-  position: absolute;
-  left: 0;
-  cursor: pointer;
-  width: 88%;
-  margin-left: 15px;
-  opacity: 0;
-}
-.date .calendarArrival {
-  position: absolute;
-  left: 20px;
-  top: 75px;
-  pointer-events: none;
-}
-.date .calendarDeparture {
-  position: absolute;
-  left: 20px;
-  top: 180px;
-  pointer-events: none;
-}
-.date button {
-  background-color: rgb(190, 173, 142);
-  border: none;
-  color: rgb(255, 255, 255);
-  width: 250px;
-  height: 60px;
-  font-family: "Archivo", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: 2.8px;
-  cursor: pointer;
-}
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 .header nav {
   display: flex;
@@ -187,6 +77,241 @@
   width: 70px;
   right: 23px;
   justify-content: space-between;
+}
+
+.info {
+  margin-top: 69px;
+  padding: 70px 20px;
+  background-color: rgb(51, 51, 51);
+  color: rgb(255, 255, 255);
+}
+.info__subTitle {
+  width: 70%;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  margin-bottom: 38px;
+  color: rgb(255, 255, 255);
+}
+.info__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(255, 255, 255);
+}
+.info__take {
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 216px;
+  margin-bottom: 20px;
+}
+.info__learn {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 216px;
+}
+
+.date {
+  position: relative;
+  background-color: rgb(34, 34, 34);
+  padding: 36px 20px;
+}
+.date label {
+  font-family: "roboto", sans-serif;
+  line-height: 16px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+.date input {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(190, 173, 142);
+  padding: 0 0 16px 40px;
+  color: rgb(104, 104, 104);
+  outline: none;
+  margin: 20px 0 32px;
+  letter-spacing: 1px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.date ::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  width: 88%;
+  margin-left: 15px;
+  opacity: 0;
+}
+.date .calendarArrival {
+  position: absolute;
+  left: 20px;
+  top: 75px;
+  pointer-events: none;
+}
+.date .calendarDeparture {
+  position: absolute;
+  left: 20px;
+  top: 180px;
+  pointer-events: none;
+}
+.date button {
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 250px;
+}
+
+.aboutUsHome {
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+.aboutUsHome .info {
+  margin-top: 60px;
+  background-color: rgb(249, 249, 249);
+  padding: 38px 20px 150px;
+}
+.aboutUsHome .info__title {
+  color: rgb(17, 17, 17);
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+.aboutUsHome .info__subTitle {
+  color: rgb(119, 119, 119);
+  width: 100%;
+  margin-bottom: 30px;
+}
+.aboutUsHome .info .text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+.aboutUsHome .info button {
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 217px;
+  margin: 23px 0;
+}
+.aboutUsHome .team {
+  position: relative;
+  top: -118px;
+  width: 270px;
+  margin: 0 auto;
+  box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
+}
+.aboutUsHome .team img {
+  width: 270px;
+  height: 300px;
+}
+.aboutUsHome .team div {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  line-height: 0;
+}
+.aboutUsHome .team div .teamGold {
+  width: 68px;
+  height: 50px;
+  margin: 54px 0 25px;
+}
+.aboutUsHome .team div .teamGrey {
+  position: absolute;
+  width: 144px;
+  height: 106px;
+  right: 0;
+  top: 50px;
+  z-index: -2;
+}
+.aboutUsHome .team div .info__title {
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  margin: 0;
+}
+.aboutUsHome .team div .textRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(17, 17, 17);
+  margin: 35px;
+}
+
+.roomsHome {
+  padding: 52px;
+}
+.roomsHome__luxury {
+  line-height: 0;
+}
+.roomsHome__luxury img {
+  width: 270px;
+  height: 300px;
+}
+.roomsHome__luxury div {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  background-color: rgb(34, 34, 34);
+}
+.roomsHome__luxury div .teamGold {
+  width: 68px;
+  height: 50px;
+  margin: 54px 0 25px;
+}
+.roomsHome__luxury div .info__title {
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  margin: 0;
+}
+.roomsHome__luxury div .textRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(17, 17, 17);
+  margin: 35px;
 }
 
 * {
