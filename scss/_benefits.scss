@@ -1,0 +1,40 @@
+@import "mixins";
+
+.benefits {
+    background-color: rgba(34, 34, 34, 1);
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 40px;
+
+    article {
+        text-align: center;
+
+        img {
+            margin: 48px 0 16px;
+        }
+
+        div {
+            .benefits--title {
+                font-family: "roboto", sans-serif;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 82px;
+                margin-bottom: -16px;
+            }
+
+            span {
+                font-family: "roboto", sans-serif;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+
+        .benefits--text {
+            font-family: "roboto", sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(153, 153, 153, 1);
+        }
+    }
+}

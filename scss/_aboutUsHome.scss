@@ -1,3 +1,5 @@
+@import "mixins";
+
 .aboutUsHome {
   width: 100%;
   color: rgba(255, 255, 255, 1);
@@ -5,7 +7,7 @@
   .info {
     margin-top: 60px;
     background-color: rgba(249, 249, 249, 1);
-    padding: 38px 20px 150px;
+    padding: 38px 20px 50px;
 
     &__title {
       color: rgba(17, 17, 17, 1);
@@ -32,13 +34,17 @@
 
   .team {
     position: relative;
-    top: -118px;
-    margin: 0 52px;
+    top: -15px;
+    margin: 0 52px 30px;
     box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
 
     img {
       width: 270px;
       height: 300px;
+    }
+
+    .divTeam {
+      padding-bottom: 50px;
     }
 
     div {
@@ -72,14 +78,14 @@
 
       .textRoboto {
         @include subTitleRoboto(rgba(17, 17, 17, 1));
-        margin: 35px;
+        margin: 35px 35px 0;
       }
     }
   }
 
   &__luxury {
     line-height: 0;
-    margin: 0 52px;
+    margin: 0 52px 52px;
 
     img {
       width: 270px;
@@ -91,24 +97,25 @@
       height: 50%;
       text-align: center;
       background-color: rgba(34, 34, 34, 1);
+      padding: 35px;
 
       .teamGold {
         width: 68px;
         height: 50px;
-        margin: 54px 0 25px;
+        margin: 25px;
       }
 
       .info__title {
         font-size: 30px;
         line-height: 30px;
         letter-spacing: -0.9px;
-        margin: 0;
+        margin-bottom: 20px;
         color: rgba(255, 255, 255, 1);
       }
 
       .textRoboto {
         @include subTitleRoboto(rgba(255, 255, 255, 1));
-        margin: 35px;
+        // margin: 35px 35px;
       }
     }
   }

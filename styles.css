@@ -51,7 +51,15 @@
   gap: 16px;
   font-family: "Archivo", sans-serif;
 }
-.header__logo .iconLogo {
+.header__iconSvg {
+  position: absolute;
+  display: flex;
+  width: 70px;
+  right: 23px;
+  justify-content: space-between;
+}
+
+.iconLogo {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,22 +69,17 @@
   box-shadow: 0px 8px 10px rgba(139, 139, 139, 0.25);
   font-size: 18px;
 }
-.header__logo p {
+
+.p1 {
   font-weight: 700;
   letter-spacing: 1px;
   font-size: 12px;
 }
-.header__logo .p2 {
+
+.p2 {
   font-weight: 400;
   letter-spacing: 1px;
   font-size: 12px;
-}
-.header__iconSvg {
-  position: absolute;
-  display: flex;
-  width: 70px;
-  right: 23px;
-  justify-content: space-between;
 }
 
 .info {
@@ -199,7 +202,7 @@
 .aboutUsHome .info {
   margin-top: 60px;
   background-color: rgb(249, 249, 249);
-  padding: 38px 20px 150px;
+  padding: 38px 20px 50px;
 }
 .aboutUsHome .info__title {
   color: rgb(17, 17, 17);
@@ -234,13 +237,16 @@
 }
 .aboutUsHome .team {
   position: relative;
-  top: -118px;
-  margin: 0 52px;
+  top: -15px;
+  margin: 0 52px 30px;
   box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
 }
 .aboutUsHome .team img {
   width: 270px;
   height: 300px;
+}
+.aboutUsHome .team .divTeam {
+  padding-bottom: 50px;
 }
 .aboutUsHome .team div {
   position: relative;
@@ -274,11 +280,11 @@
   font-size: 14px;
   line-height: 22px;
   color: rgb(17, 17, 17);
-  margin: 35px;
+  margin: 35px 35px 0;
 }
 .aboutUsHome__luxury {
   line-height: 0;
-  margin: 0 52px;
+  margin: 0 52px 52px;
 }
 .aboutUsHome__luxury img {
   width: 270px;
@@ -289,17 +295,18 @@
   height: 50%;
   text-align: center;
   background-color: rgb(34, 34, 34);
+  padding: 35px;
 }
 .aboutUsHome__luxury div .teamGold {
   width: 68px;
   height: 50px;
-  margin: 54px 0 25px;
+  margin: 25px;
 }
 .aboutUsHome__luxury div .info__title {
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.9px;
-  margin: 0;
+  margin-bottom: 20px;
   color: rgb(255, 255, 255);
 }
 .aboutUsHome__luxury div .textRoboto {
@@ -308,7 +315,308 @@
   font-size: 14px;
   line-height: 22px;
   color: rgb(255, 255, 255);
-  margin: 35px;
+}
+
+.roomsHome {
+  text-align: center;
+  z-index: -1;
+}
+.roomsHome__subTitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  margin-bottom: 38px;
+  color: rgb(119, 119, 119);
+  margin-bottom: 23px;
+}
+.roomsHome__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(34, 34, 34);
+}
+.roomsHome__icons {
+  position: relative;
+  z-index: 10;
+  top: 20px;
+  width: 256px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 16px rgba(138, 138, 138, 0.05);
+  padding: 12px;
+}
+
+.slider .swiper .swiper-button-next {
+  top: 125px;
+  background-color: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+  width: 32px;
+  height: 32px;
+}
+.slider .swiper .swiper-button-prev {
+  top: 125px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(17, 17, 17);
+  width: 32px;
+  height: 32px;
+}
+.slider .swiper ::after {
+  font-size: x-small;
+}
+.slider .swiper .swiper-pagination,
+.slider .swiper .swiper-scrollbar {
+  display: none;
+}
+.slider .swiper img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider .swiper .container {
+  background-color: chartreuse;
+  height: 30px;
+}
+.slider .swiper .swiper-slide .minimal {
+  padding: 19px 40px;
+  margin: 0 20px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 20px;
+}
+.slider .swiper .swiper-slide .minimal__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(34, 34, 34);
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+.slider .swiper .swiper-slide .minimal__subTitle {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+  line-height: 24px;
+}
+.slider .swiper .swiper-slide .minimal div {
+  display: flex;
+  justify-content: center;
+}
+.slider .swiper .swiper-slide .minimal div .price {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: rgb(190, 173, 142);
+}
+.slider .swiper .swiper-slide .minimal div .priceText {
+  font-size: 13px;
+}
+
+.videoHome {
+  background-color: rgb(34, 34, 34);
+  padding: 64px 20px 0;
+}
+.videoHome__subTitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  margin-bottom: 38px;
+  color: rgb(189, 172, 141);
+  margin-bottom: 28px;
+}
+.videoHome__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 16px;
+}
+.videoHome__text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(194, 194, 194);
+  margin-bottom: 30px;
+}
+.videoHome button {
+  background-color: rgb(189, 172, 141);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 216px;
+  margin: 28px 0 40px;
+}
+
+.benefits {
+  background-color: rgb(34, 34, 34);
+  color: rgb(255, 255, 255);
+  padding-bottom: 40px;
+}
+.benefits article {
+  text-align: center;
+}
+.benefits article img {
+  margin: 48px 0 16px;
+}
+.benefits article div .benefits--title {
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 82px;
+  margin-bottom: -16px;
+}
+.benefits article div span {
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+}
+.benefits article .benefits--text {
+  font-family: "roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgb(153, 153, 153);
+}
+
+footer {
+  background-image: url("../images/fondo.jpg");
+  margin: 40px 20px 0;
+}
+footer .logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-family: "Archivo", sans-serif;
+}
+footer .logo .iconLogo {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  background-color: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+  margin: 0 5px 0 0;
+}
+footer .logo div .p1 {
+  font-size: 26px;
+}
+footer .logo div .p2 {
+  font-size: 26px;
+}
+footer .footerText {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  margin: 36px 0 20px;
+  font-size: 16px;
+}
+footer .rrss {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+footer .rrss div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+  width: 40px;
+  height: 40px;
+}
+footer .rrss .rrss-gold {
+  background-color: rgb(190, 173, 142);
+}
+footer .services .servicesTitle {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(34, 34, 34);
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 30px 0;
+}
+footer .services article {
+  display: flex;
+}
+footer .services article li {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+  font-size: 16px;
+  line-height: 48px;
+  list-style-type: none;
+}
+footer .contact {
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+footer .contact__title {
+  font-size: 24px;
+  margin-top: 30px;
+}
+footer .contact__container {
+  display: flex;
+  margin: 30px 0;
+}
+footer .contact__container article {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: space-around;
+  margin-right: 23px;
+}
+footer .contact__container article span {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+}
+footer .copyright {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+}
+footer .copyright p {
+  margin: 20px 0 20px 20px;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.5px;
 }
 
 * {
