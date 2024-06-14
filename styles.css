@@ -38,7 +38,7 @@
 }
 .header__menuBurguerSvg {
   cursor: pointer;
-  transition: transform 900ms;
+  transition: transform 500ms;
 }
 .header a {
   text-decoration: none;
@@ -82,6 +82,32 @@
   font-size: 12px;
 }
 
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: Old Standard TT;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
 .info {
   margin-top: 69px;
   padding: 70px 20px;
@@ -118,7 +144,7 @@
   letter-spacing: 2.8px;
   cursor: pointer;
   width: 216px;
-  margin-bottom: 20px;
+  margin: 0 20px 20px 0;
 }
 .info__learn {
   background-color: transparent;
@@ -132,6 +158,32 @@
   letter-spacing: 2.8px;
   cursor: pointer;
   width: 216px;
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: Old Standard TT;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
 }
 
 .date {
@@ -193,6 +245,32 @@
   letter-spacing: 2.8px;
   cursor: pointer;
   width: 250px;
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: Old Standard TT;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
 }
 
 .aboutUsHome {
@@ -317,6 +395,32 @@
   color: rgb(255, 255, 255);
 }
 
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: Old Standard TT;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
 .roomsHome {
   text-align: center;
   z-index: -1;
@@ -353,6 +457,35 @@
   padding: 12px;
 }
 
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: Old Standard TT;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
+.slider {
+  text-align: center;
+}
 .slider .swiper .swiper-button-next {
   top: 125px;
   background-color: rgb(190, 173, 142);
@@ -374,15 +507,14 @@
 .slider .swiper .swiper-scrollbar {
   display: none;
 }
+.slider .swiper .swiper-pagination-bullet-active {
+  background: rgb(190, 173, 142);
+}
 .slider .swiper img {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-.slider .swiper .container {
-  background-color: chartreuse;
-  height: 30px;
 }
 .slider .swiper .swiper-slide .minimal {
   padding: 19px 40px;
@@ -423,6 +555,59 @@
 }
 .slider .swiper .swiper-slide .minimal div .priceText {
   font-size: 13px;
+}
+.slider .swiper-noButton {
+  cursor: pointer;
+}
+.slider .swiper-noButton .swiper-pagination,
+.slider .swiper-noButton .swiper-scrollbar {
+  display: block;
+}
+.slider .swiper-noButton .iconContainer {
+  display: flex;
+  padding: 0 38px;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider .swiper-noButton .iconContainer .iconFacilities {
+  width: 70px;
+  height: 70px;
+}
+.slider .swiper-noButton .iconContainer .numberFacility {
+  font-family: Archivo;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 130px;
+  color: rgba(34, 34, 34, 0.04);
+}
+.slider .swiper-noButton .title--small {
+  font-size: 30px;
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: Old Standard TT;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
 }
 
 .videoHome {
@@ -471,6 +656,32 @@
   margin: 28px 0 40px;
 }
 
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: Old Standard TT;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
 .benefits {
   background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
@@ -501,6 +712,32 @@
   font-size: 16px;
   line-height: 22px;
   color: rgb(153, 153, 153);
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: Old Standard TT;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: Archivo;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
 }
 
 footer {
