@@ -120,7 +120,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <img src="./images/1.webp" alt="habitacion hotel" />
+            <img class="imgSlideRoom" src="./images/1.webp" alt="habitacion hotel" />
             <div class="minimal">
               <p class="minimal__title">Minimal Duplex Room</p>
               <p class="minimal__subTitle">
@@ -134,7 +134,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./images/2.webp" alt="habitacion hotel" />
+            <img class="imgSlideRoom" src="./images/2.webp" alt="habitacion hotel" />
             <div class="minimal">
               <p class="minimal__title">Minimal Duplex Room</p>
               <p class="minimal__subTitle">
@@ -148,7 +148,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <img src="./images/3.webp" alt="habitacion hotel" />
+            <img class="imgSlideRoom" src="./images/3.webp" alt="habitacion hotel" />
             <div class="minimal">
               <p class="minimal__title">Minimal Duplex Room</p>
               <p class="minimal__subTitle">
@@ -197,10 +197,10 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-            <div class="">
+            <div class="facilityCard">
               <div class="iconContainer">
-                <img class="iconFacilities" src="./svg/rating.svg" alt="rating" />
-                <p class="numberFacility">01</p>
+                <img class="iconContainer__svg" src="./svg/rating.svg" alt="rating" />
+                <p class="iconContainer__number">01</p>
               </div>
               <p class="title title--small">Have High Rating</p>
               <p class="textArchivo">Lorem ipsum dolor sit amet,
@@ -209,17 +209,115 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="minimal">
-              <p class="minimal__title">Minimal Duplex Room</p>
+            <div class="facilityCard">
+              <div class="iconContainer">
+                <img class="iconContainer__svg" src="./svg/quietHour.svg" alt="rating" />
+                <p class="iconContainer__number">02</p>
+              </div>
+              <p class="title title--small">Quiet Hours</p>
+              <p class="textArchivo">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna..</p>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="facilityCard">
+              <div class="iconContainer">
+                <img class="iconContainer__svg" src="./svg/bestLocation.svg" alt="rating" />
+                <p class="iconContainer__number">03</p>
+              </div>
+              <p class="title title--small">Best Locations </p>
+              <p class="textArchivo">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="facilityCard">
+              <div class="iconContainer">
+                <img class="iconContainer__svg" src="./svg/freeCancelation.svg" alt="rating" />
+                <p class="iconContainer__number">04</p>
+              </div>
+              <p class="title title--small">Free Cancellation</p>
+              <p class="textArchivo">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="facilityCard">
+              <div class="iconContainer">
+                <img class="iconContainer__svg" src="./svg/pay.svg" alt="rating" />
+                <p class="iconContainer__number">05</p>
+              </div>
+              <p class="title title--small">Payment Options</p>
+              <p class="textArchivo">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="facilityCard">
+              <div class="iconContainer">
+                <img class="iconContainer__svg" src="./svg/specialOffers.svg" alt="rating" />
+                <p class="iconContainer__number">06</p>
+              </div>
+              <p class="title title--small">Special Offers</p>
+              <p class="textArchivo">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna..</p>
+            </div>
+          </div>
+
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
       </div>
     </article>
   </section>
-  <section class="menuFoodsHome"></section>
+  <section class="menuFoodHome">
+    <div class="menuFoodHome__iconSvg"></div>
+    <div class="menuFoodHome__containerText">
+      <p class="subTitle subTitle--containerText">MENU</p>
+      <p class="title title--containerText">Our Foods Menu</p>
+    </div>
+    <article class="slider">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img class="imgSlideRoom" src="./images/1.webp" alt="habitacion hotel" />
+            <div class="minimal">
+              <p class="minimal__title">Minimal Duplex Room</p>
+              <p class="minimal__subTitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img class="imgSlideRoom" src="./images/1.webp" alt="habitacion hotel" />
+            <div class="minimal">
+              <p class="minimal__title">Minimal Duplex Room</p>
+              <p class="minimal__subTitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </article>
+
+  </section>
   <section class="benefits">
     <article>
       <img src="./svg/cohete.svg" alt="cohete" />

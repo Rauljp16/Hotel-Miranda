@@ -510,7 +510,7 @@
 .slider .swiper .swiper-pagination-bullet-active {
   background: rgb(190, 173, 142);
 }
-.slider .swiper img {
+.slider .swiper .imgSlideRoom {
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
@@ -556,32 +556,43 @@
 .slider .swiper .swiper-slide .minimal div .priceText {
   font-size: 13px;
 }
+.slider .subTitle--noButton {
+  margin: 50px 0 20px;
+}
 .slider .swiper-noButton {
-  cursor: pointer;
+  cursor: default;
 }
 .slider .swiper-noButton .swiper-pagination,
 .slider .swiper-noButton .swiper-scrollbar {
   display: block;
 }
-.slider .swiper-noButton .iconContainer {
-  display: flex;
-  padding: 0 38px;
-  justify-content: space-between;
-  align-items: center;
+.slider .swiper-noButton .facilityCard {
+  text-align: start;
+  padding: 25px 35px 50px;
 }
-.slider .swiper-noButton .iconContainer .iconFacilities {
+.slider .swiper-noButton .facilityCard .iconContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.slider .swiper-noButton .facilityCard .iconContainer__svg {
   width: 70px;
   height: 70px;
+  margin-bottom: 20px;
 }
-.slider .swiper-noButton .iconContainer .numberFacility {
+.slider .swiper-noButton .facilityCard .iconContainer__number {
   font-family: Archivo;
   font-size: 120px;
   font-weight: 700;
   line-height: 130px;
   color: rgba(34, 34, 34, 0.04);
+  margin-bottom: 20px;
 }
-.slider .swiper-noButton .title--small {
+.slider .swiper-noButton .facilityCard .title--small {
   font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  margin-bottom: 20px;
 }
 
 .textArchivo {
@@ -654,6 +665,34 @@
   cursor: pointer;
   width: 216px;
   margin: 28px 0 40px;
+}
+
+.menuFoodHome {
+  position: relative;
+  width: 100%;
+  border: 1px solid red;
+  margin: 50px 0;
+}
+.menuFoodHome__iconSvg {
+  background-image: url("../svg/foodMovil.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 114.5px;
+}
+.menuFoodHome__containerText {
+  width: 100%;
+  border: 1px solid rgb(45, 255, 30);
+}
+.menuFoodHome__containerText .subTitle--containerText {
+  margin-bottom: 20px;
+}
+.menuFoodHome__containerText .subTitle--containerText {
+  margin-bottom: 20px;
 }
 
 .textArchivo {

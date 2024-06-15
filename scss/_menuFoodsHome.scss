@@ -1,0 +1,34 @@
+.menuFoodHome {
+    position: relative;
+    width: 100%;
+    border: 1px solid red;
+    margin: 50px 0;
+
+
+    &__iconSvg {
+        background-image: url("../svg/foodMovil.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: right;
+        position: relative;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 114.5px;
+    }
+
+    &__containerText {
+        width: 100%;
+        border: 1px solid rgb(45, 255, 30);
+
+
+        .subTitle--containerText {
+            margin-bottom: 20px;
+        }
+
+        .subTitle--containerText {
+            margin-bottom: 20px;
+
+        }
+    }
+}
