@@ -91,7 +91,7 @@
 }
 
 .title {
-  font-family: Old Standard TT;
+  font-family: "Old Standard TT", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
@@ -100,12 +100,20 @@
 }
 
 .subTitle {
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
   color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
 
 .info {
@@ -169,7 +177,7 @@
 }
 
 .title {
-  font-family: Old Standard TT;
+  font-family: "Old Standard TT", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
@@ -178,12 +186,20 @@
 }
 
 .subTitle {
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
   color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
 
 .date {
@@ -256,7 +272,7 @@
 }
 
 .title {
-  font-family: Old Standard TT;
+  font-family: "Old Standard TT", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
@@ -265,12 +281,20 @@
 }
 
 .subTitle {
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
   color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
 
 .aboutUsHome {
@@ -404,7 +428,7 @@
 }
 
 .title {
-  font-family: Old Standard TT;
+  font-family: "Old Standard TT", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
@@ -413,12 +437,20 @@
 }
 
 .subTitle {
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
   color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
 
 .roomsHome {
@@ -466,7 +498,7 @@
 }
 
 .title {
-  font-family: Old Standard TT;
+  font-family: "Old Standard TT", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
@@ -475,12 +507,20 @@
 }
 
 .subTitle {
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
   color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
 
 .slider {
@@ -594,7 +634,52 @@
   letter-spacing: -0.9px;
   margin-bottom: 20px;
 }
-
+.slider .swiper2 .swiper-button-next2 {
+  top: 25px;
+  background-color: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+  width: 32px;
+  height: 32px;
+}
+.slider .swiper2 .swiper-button-prev2 {
+  top: 25px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(17, 17, 17);
+  width: 32px;
+  height: 32px;
+}
+.slider .swiper2 ::after {
+  font-size: x-small;
+}
+.slider .swiper2 .swiper-pagination,
+.slider .swiper2 .swiper-scrollbar {
+  display: none;
+}
+.slider .swiper2 .swiper-pagination-bullet-active {
+  background: rgb(190, 173, 142);
+}
+.slider .swiper2 .elementMenu {
+  display: flex;
+}
+.slider .swiper2 .elementMenu__img {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 30px 0 20px;
+}
+.slider .swiper2 .elementMenu__text {
+  text-align: start;
+  margin: 0 30px 20px 0;
+}
+.slider .swiper2 .elementMenu__text__title {
+  font-family: Old Standard TT;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+  color: rgb(34, 34, 34);
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -604,7 +689,7 @@
 }
 
 .title {
-  font-family: Old Standard TT;
+  font-family: "Old Standard TT", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
@@ -613,12 +698,20 @@
 }
 
 .subTitle {
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
   color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
 
 .videoHome {
@@ -670,7 +763,6 @@
 .menuFoodHome {
   position: relative;
   width: 100%;
-  border: 1px solid red;
   margin: 50px 0;
 }
 .menuFoodHome__iconSvg {
@@ -686,7 +778,7 @@
 }
 .menuFoodHome__containerText {
   width: 100%;
-  border: 1px solid rgb(45, 255, 30);
+  margin-bottom: 30px;
 }
 .menuFoodHome__containerText .subTitle--containerText {
   margin-bottom: 20px;
@@ -704,7 +796,7 @@
 }
 
 .title {
-  font-family: Old Standard TT;
+  font-family: "Old Standard TT", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
@@ -713,12 +805,20 @@
 }
 
 .subTitle {
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
   color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
 
 .benefits {
@@ -762,7 +862,7 @@
 }
 
 .title {
-  font-family: Old Standard TT;
+  font-family: "Old Standard TT", serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 60px;
@@ -771,12 +871,20 @@
 }
 
 .subTitle {
-  font-family: Archivo;
+  font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15.23px;
   letter-spacing: 2.79px;
   color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
 
 footer {

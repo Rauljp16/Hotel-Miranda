@@ -1,125 +1,176 @@
 @import "mixins";
 
 .slider {
-    text-align: center;
+  text-align: center;
 
-    .swiper {
-        .swiper-button-next {
-            top: 125px;
-            background-color: rgba(190, 173, 142, 1);
-            color: rgb(255, 255, 255, 1);
-            width: 32px;
-            height: 32px;
-        }
-
-        .swiper-button-prev {
-            top: 125px;
-            background-color: rgb(255, 255, 255, 1);
-            color: rgba(17, 17, 17, 1);
-            width: 32px;
-            height: 32px;
-        }
-
-        ::after {
-            font-size: x-small;
-        }
-
-        .swiper-pagination,
-        .swiper-scrollbar {
-            display: none;
-        }
-
-        .swiper-pagination-bullet-active {
-            background: rgba(190, 173, 142, 1);
-        }
-
-        .imgSlideRoom {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-
-        .swiper-slide {
-            .minimal {
-                padding: 19px 40px;
-                margin: 0 20px;
-                background-color: rgb(255, 255, 255);
-                position: relative;
-                bottom: 25px;
-
-                &__title {
-                    @include title(rgba(34, 34, 34, 1));
-                    font-size: 28px;
-                    line-height: 36px;
-                    margin-bottom: 10px;
-                }
-
-                &__subTitle {
-                    @include subTitleRoboto(rgba(119, 119, 119, 1));
-                    line-height: 24px;
-                }
-
-                div {
-                    display: flex;
-                    justify-content: center;
-
-                    .price {
-                        @include price;
-                    }
-
-                    .priceText {
-                        font-size: 13px;
-                    }
-                }
-            }
-        }
+  .swiper {
+    .swiper-button-next {
+      top: 125px;
+      background-color: rgba(190, 173, 142, 1);
+      color: rgb(255, 255, 255, 1);
+      width: 32px;
+      height: 32px;
     }
 
-    .subTitle--noButton {
-        margin: 50px 0 20px;
+    .swiper-button-prev {
+      top: 125px;
+      background-color: rgb(255, 255, 255, 1);
+      color: rgba(17, 17, 17, 1);
+      width: 32px;
+      height: 32px;
     }
 
-    .swiper-noButton {
-        cursor: default;
-
-        .swiper-pagination,
-        .swiper-scrollbar {
-            display: block;
-        }
-
-        .facilityCard {
-            text-align: start;
-            padding: 25px 35px 50px;
-
-            .iconContainer {
-                display: flex;
-                justify-content: space-between;
-                align-items: end;
-
-                &__svg {
-                    width: 70px;
-                    height: 70px;
-                    margin-bottom: 20px;
-
-                }
-
-                &__number {
-                    font-family: Archivo;
-                    font-size: 120px;
-                    font-weight: 700;
-                    line-height: 130px;
-                    color: rgba(34, 34, 34, 0.04);
-                    margin-bottom: 20px;
-                }
-            }
-
-            .title--small {
-                font-size: 30px;
-                line-height: 30px;
-                letter-spacing: -0.9px;
-                margin-bottom: 20px;
-
-            }
-        }
+    ::after {
+      font-size: x-small;
     }
+
+    .swiper-pagination,
+    .swiper-scrollbar {
+      display: none;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: rgba(190, 173, 142, 1);
+    }
+
+    .imgSlideRoom {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .swiper-slide {
+      .minimal {
+        padding: 19px 40px;
+        margin: 0 20px;
+        background-color: rgb(255, 255, 255);
+        position: relative;
+        bottom: 25px;
+
+        &__title {
+          @include title(rgba(34, 34, 34, 1));
+          font-size: 28px;
+          line-height: 36px;
+          margin-bottom: 10px;
+        }
+
+        &__subTitle {
+          @include subTitleRoboto(rgba(119, 119, 119, 1));
+          line-height: 24px;
+        }
+
+        div {
+          display: flex;
+          justify-content: center;
+
+          .price {
+            @include price;
+          }
+
+          .priceText {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .subTitle--noButton {
+    margin: 50px 0 20px;
+  }
+
+  .swiper-noButton {
+    cursor: default;
+
+    .swiper-pagination,
+    .swiper-scrollbar {
+      display: block;
+    }
+
+    .facilityCard {
+      text-align: start;
+      padding: 25px 35px 50px;
+
+      .iconContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+        &__svg {
+          width: 70px;
+          height: 70px;
+          margin-bottom: 20px;
+        }
+
+        &__number {
+          font-family: Archivo;
+          font-size: 120px;
+          font-weight: 700;
+          line-height: 130px;
+          color: rgba(34, 34, 34, 0.04);
+          margin-bottom: 20px;
+        }
+      }
+
+      .title--small {
+        font-size: 30px;
+        line-height: 30px;
+        letter-spacing: -0.9px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .swiper2 {
+    .swiper-button-next2 {
+      top: 25px;
+      background-color: rgba(190, 173, 142, 1);
+      color: rgb(255, 255, 255, 1);
+      width: 32px;
+      height: 32px;
+    }
+
+    .swiper-button-prev2 {
+      top: 25px;
+      background-color: rgb(255, 255, 255, 1);
+      color: rgba(17, 17, 17, 1);
+      width: 32px;
+      height: 32px;
+    }
+
+    ::after {
+      font-size: x-small;
+    }
+
+    .swiper-pagination,
+    .swiper-scrollbar {
+      display: none;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: rgba(190, 173, 142, 1);
+    }
+    .elementMenu {
+      display: flex;
+      &__img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        margin: 0 30px 0 20px;
+      }
+      &__text {
+        text-align: start;
+        margin: 0 30px 20px 0;
+        &__title {
+          font-family: Old Standard TT;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: -0.72px;
+          color: rgba(34, 34, 34, 1);
+        }
+        &__subtitle {
+        }
+      }
+    }
+  }
 }
