@@ -660,17 +660,17 @@
 }
 .slider .swiper2 .elementMenu {
   display: flex;
+  margin: 0 20px 20px 20px;
 }
 .slider .swiper2 .elementMenu__img {
   width: 120px;
   height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0 30px 0 20px;
 }
 .slider .swiper2 .elementMenu__text {
   text-align: start;
-  margin: 0 30px 20px 0;
+  margin: 10px 10px 10px 30px;
 }
 .slider .swiper2 .elementMenu__text__title {
   font-family: Old Standard TT;
@@ -679,7 +679,15 @@
   line-height: 24px;
   letter-spacing: -0.72px;
   color: rgb(34, 34, 34);
+  margin-bottom: 10px;
 }
+.slider .swiper2 .elementMenu__text__subtitle {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -778,7 +786,7 @@
 }
 .menuFoodHome__containerText {
   width: 100%;
-  margin-bottom: 30px;
+  margin: 0 20px 30px 20px;
 }
 .menuFoodHome__containerText .subTitle--containerText {
   margin-bottom: 20px;
