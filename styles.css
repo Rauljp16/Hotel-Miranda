@@ -477,7 +477,7 @@
 }
 .roomsHome__icons {
   position: relative;
-  z-index: 10;
+  z-index: 5;
   top: 20px;
   width: 256px;
   margin: 0 auto;
@@ -526,14 +526,17 @@
 .slider {
   text-align: center;
 }
-.slider .swiper .swiper-button-next {
+.slider .swiper {
+  position: relative;
+}
+.slider .swiper .button-next-roomsHome {
   top: 125px;
   background-color: rgb(190, 173, 142);
   color: rgb(255, 255, 255);
   width: 32px;
   height: 32px;
 }
-.slider .swiper .swiper-button-prev {
+.slider .swiper .button-prev-roomsHome {
   top: 125px;
   background-color: rgb(255, 255, 255);
   color: rgb(17, 17, 17);
@@ -634,29 +637,23 @@
   letter-spacing: -0.9px;
   margin-bottom: 20px;
 }
-.slider .swiper2 .swiper-button-next2 {
-  top: 25px;
-  background-color: rgb(190, 173, 142);
-  color: rgb(255, 255, 255);
-  width: 32px;
-  height: 32px;
-}
-.slider .swiper2 .swiper-button-prev2 {
-  top: 25px;
-  background-color: rgb(255, 255, 255);
+.slider .swiper2 .button-prev-foodMenu {
+  position: relative;
+  top: 10px;
+  left: 65%;
+  background-color: rgb(248, 248, 248);
   color: rgb(17, 17, 17);
   width: 32px;
   height: 32px;
 }
-.slider .swiper2 ::after {
-  font-size: x-small;
-}
-.slider .swiper2 .swiper-pagination,
-.slider .swiper2 .swiper-scrollbar {
-  display: none;
-}
-.slider .swiper2 .swiper-pagination-bullet-active {
-  background: rgb(190, 173, 142);
+.slider .swiper2 .button-next-foodMenu {
+  position: relative;
+  bottom: 0px;
+  left: 80%;
+  background-color: rgb(190, 173, 142);
+  color: rgb(248, 248, 248);
+  width: 32px;
+  height: 32px;
 }
 .slider .swiper2 .elementMenu {
   display: flex;
@@ -771,7 +768,7 @@
 .menuFoodHome {
   position: relative;
   width: 100%;
-  margin: 50px 0;
+  margin-bottom: 42px;
 }
 .menuFoodHome__iconSvg {
   background-image: url("../svg/foodMovil.svg");

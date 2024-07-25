@@ -4,7 +4,9 @@
   text-align: center;
 
   .swiper {
-    .swiper-button-next {
+    position: relative;
+
+    .button-next-roomsHome {
       top: 125px;
       background-color: rgba(190, 173, 142, 1);
       color: rgb(255, 255, 255, 1);
@@ -12,13 +14,14 @@
       height: 32px;
     }
 
-    .swiper-button-prev {
+    .button-prev-roomsHome {
       top: 125px;
       background-color: rgb(255, 255, 255, 1);
       color: rgba(17, 17, 17, 1);
       width: 32px;
       height: 32px;
     }
+
 
     ::after {
       font-size: x-small;
@@ -40,6 +43,7 @@
     }
 
     .swiper-slide {
+
       .minimal {
         padding: 19px 40px;
         margin: 0 20px;
@@ -122,33 +126,25 @@
   }
 
   .swiper2 {
-    .swiper-button-next2 {
-      top: 25px;
-      background-color: rgba(190, 173, 142, 1);
-      color: rgb(255, 255, 255, 1);
+
+    .button-prev-foodMenu {
+      position: relative;
+      top: 10px;
+      left: 65%;
+      background-color: rgba(248, 248, 248, 1);
+      color: rgba(17, 17, 17);
       width: 32px;
       height: 32px;
     }
 
-    .swiper-button-prev2 {
-      top: 25px;
-      background-color: rgb(255, 255, 255, 1);
-      color: rgba(17, 17, 17, 1);
+    .button-next-foodMenu {
+      position: relative;
+      bottom: 0px;
+      left: 80%;
+      background-color: rgba(190, 173, 142);
+      color: rgba(248, 248, 248, 1);
       width: 32px;
       height: 32px;
-    }
-
-    ::after {
-      font-size: x-small;
-    }
-
-    .swiper-pagination,
-    .swiper-scrollbar {
-      display: none;
-    }
-
-    .swiper-pagination-bullet-active {
-      background: rgba(190, 173, 142, 1);
     }
 
     .elementMenu {
@@ -182,7 +178,10 @@
           line-height: 24px;
 
         }
+
       }
+
     }
   }
+
 }
