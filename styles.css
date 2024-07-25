@@ -684,6 +684,10 @@
   font-weight: 400;
   line-height: 24px;
 }
+.slider .img-slider3 {
+  width: 100%;
+  margin: 42px 0;
+}
 
 .textArchivo {
   font-family: "Archivo", sans-serif;
@@ -768,7 +772,6 @@
 .menuFoodHome {
   position: relative;
   width: 100%;
-  margin-bottom: 42px;
 }
 .menuFoodHome__iconSvg {
   background-image: url("../svg/foodMovil.svg");

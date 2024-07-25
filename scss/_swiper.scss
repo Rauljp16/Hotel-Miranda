@@ -22,7 +22,6 @@
       height: 32px;
     }
 
-
     ::after {
       font-size: x-small;
     }
@@ -43,7 +42,6 @@
     }
 
     .swiper-slide {
-
       .minimal {
         padding: 19px 40px;
         margin: 0 20px;
@@ -126,7 +124,6 @@
   }
 
   .swiper2 {
-
     .button-prev-foodMenu {
       position: relative;
       top: 10px;
@@ -176,12 +173,12 @@
           font-size: 14px;
           font-weight: 400;
           line-height: 24px;
-
         }
-
       }
-
     }
   }
-
+  .img-slider3 {
+    width: 100%;
+    margin: 42px 0;
+  }
 }
