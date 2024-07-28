@@ -1,16 +1,18 @@
 .header {
-  position: relative;
+  position: fixed;
   z-index: 10;
-  background-color: rgb(235, 234, 154);
+  width: 100vw;
+  height: 70px;
 }
 .header nav {
   display: flex;
   align-items: center;
   gap: 1em;
-  height: 4.3em;
+  height: 100%;
   width: 100%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-  background-color: rgb(235, 154, 235);
+  background-color: rgb(255, 255, 255);
+  padding-left: 22px;
 }
 .header nav ul {
   width: 100%;
@@ -32,9 +34,9 @@
 .header .menuDown {
   position: absolute;
   display: block;
-  background-color: rgb(172, 159, 243);
+  background-color: rgb(255, 255, 255);
   left: 0;
-  top: 50px;
+  top: 68px;
   width: 100%;
 }
 .header__menuBurguerSvg {
@@ -56,8 +58,9 @@
   position: absolute;
   display: flex;
   width: 70px;
-  right: 23px;
+  right: 0;
   justify-content: space-between;
+  margin-right: 22px;
 }
 
 .iconLogo {
@@ -118,7 +121,7 @@
 }
 
 .info {
-  padding: 70px 20px;
+  padding: 140px 20px;
   background-color: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
 }
@@ -1016,12 +1019,13 @@ footer .copyright p {
   letter-spacing: -0.5px;
 }
 
+html,
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   min-width: 320px;
 }/*# sourceMappingURL=styles.css.map */

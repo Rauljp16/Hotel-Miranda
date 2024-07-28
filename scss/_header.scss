@@ -1,100 +1,96 @@
 .header {
-    position: relative;
-    // width: auto;
-    // top: 0;
-    // left: 0;
-    z-index: 10;
-    background-color: rgb(235, 234, 154);
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 70px;
 
-    nav {
-        display: flex;
-        align-items: center;
-        gap: 1em;
-        height: 4.3em;
-        width: 100%;
-        //padding: 0 20px;
-        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
-        // background-color: rgba(255, 255, 255, 1);
-        background-color: rgb(235, 154, 235);
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    background-color: rgba(255, 255, 255, 1);
+    padding-left: 22px;
 
+    ul {
+      width: 100%;
+      position: fixed;
+      display: none;
+      left: 0;
+      list-style: none;
+      background-color: rgba(255, 255, 255, 1);
+      padding: 8px 0;
+      z-index: -1;
 
-        ul {
-            width: 100%;
-            position: fixed;
-            display: none;
-            left: 0;
-            list-style: none;
-            background-color: rgba(255, 255, 255, 1);
-            padding: 8px 0;
-            z-index: -1;
+      li {
+        margin: 21px 16px;
 
-            li {
-                margin: 21px 16px;
-
-                a {
-                    font-family: "Archivo", sans-serif;
-                    font-weight: 600;
-                }
-            }
+        a {
+          font-family: "Archivo", sans-serif;
+          font-weight: 600;
         }
+      }
     }
+  }
 
-    .menuDown {
-        position: absolute;
-        display: block;
-        background-color: rgb(172, 159, 243);
-        left: 0;
-        top: 50px;
-        width: 100%;
-    }
+  .menuDown {
+    position: absolute;
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+    left: 0;
+    top: 68px;
+    width: 100%;
+  }
 
-    &__menuBurguerSvg {
-        cursor: pointer;
-        transition: transform 500ms;
-    }
+  &__menuBurguerSvg {
+    cursor: pointer;
+    transition: transform 500ms;
+  }
 
-    a {
-        text-decoration: none;
-        color: inherit;
-        font-weight: 700;
-    }
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+  }
 
-    &__logo {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        font-family: "Archivo", sans-serif;
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-family: "Archivo", sans-serif;
+  }
 
-    }
-
-    &__iconSvg {
-        position: absolute;
-        display: flex;
-        width: 70px;
-        right: 23px;
-        justify-content: space-between;
-    }
+  &__iconSvg {
+    position: absolute;
+    display: flex;
+    width: 70px;
+    right: 0;
+    justify-content: space-between;
+    margin-right: 22px;
+  }
 }
 
 .iconLogo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 36px;
-    height: 36px;
-    margin-left: 12px;
-    box-shadow: 0px 8px 10px rgba(139, 139, 139, 0.25);
-    font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-left: 12px;
+  box-shadow: 0px 8px 10px rgba(139, 139, 139, 0.25);
+  font-size: 18px;
 }
 
 .p1 {
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 12px;
 }
 
 .p2 {
-    font-weight: 400;
-    letter-spacing: 1px;
-    font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 12px;
 }
