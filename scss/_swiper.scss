@@ -3,9 +3,11 @@
 .slider {
   text-align: center;
 
-  .swiper {
-    position: relative;
+  .subTitle--noButton {
+    margin: 50px 0 20px;
+  }
 
+  .swiperRoomsHome {
     .button-next-roomsHome {
       top: 125px;
       background-color: rgba(190, 173, 142, 1);
@@ -24,15 +26,6 @@
 
     ::after {
       font-size: x-small;
-    }
-
-    .swiper-pagination,
-    .swiper-scrollbar {
-      display: none;
-    }
-
-    .swiper-pagination-bullet-active {
-      background: rgba(190, 173, 142, 1);
     }
 
     .imgSlideRoom {
@@ -76,18 +69,13 @@
       }
     }
   }
+}
 
-  .subTitle--noButton {
-    margin: 50px 0 20px;
-  }
+.slider {
+  position: relative;
 
-  .swiper-noButton {
-    cursor: default;
-
-    .swiper-pagination,
-    .swiper-scrollbar {
-      display: block;
-    }
+  .swiperFacilitiesHome {
+    margin: 50px 0;
 
     .facilityCard {
       text-align: start;
@@ -121,64 +109,93 @@
         margin-bottom: 20px;
       }
     }
-  }
 
-  .swiper2 {
-    .button-prev-foodMenu {
-      position: relative;
-      top: 10px;
-      left: 65%;
-      background-color: rgba(248, 248, 248, 1);
-      color: rgba(17, 17, 17);
-      width: 32px;
-      height: 32px;
+    .swiper-pagination-bullet-active {
+      background: rgba(190, 173, 142, 1);
+    }
+  }
+}
+
+.slider {
+
+  .swiperMenuFoodHome1 {
+    .swiper-wrapper {
+      margin-bottom: 100px;
+
+      .elementMenu {
+        display: flex;
+        margin: 0 20px 20px 20px;
+
+        &__img {
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+        }
+
+        &__text {
+          text-align: start;
+          margin: 10px 10px 10px 30px;
+
+          &__title {
+            font-family: Old Standard TT;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: -0.72px;
+            color: rgba(34, 34, 34, 1);
+            margin-bottom: 10px;
+          }
+
+          &__subtitle {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+      }
     }
 
     .button-next-foodMenu {
-      position: relative;
-      bottom: 0px;
-      left: 80%;
-      background-color: rgba(190, 173, 142);
-      color: rgba(248, 248, 248, 1);
-      width: 32px;
-      height: 32px;
+      top: 90%;
+      right: 20px;
+      background-color: rgba(190, 173, 142, 1);
+      color: rgb(255, 255, 255, 1);
+      width: 36px;
+      height: 36px;
     }
 
-    .elementMenu {
-      display: flex;
-      margin: 0 20px 20px 20px;
+    .button-prev-foodMenu {
+      top: 90%;
+      left: 290px;
+      background-color: rgba(248, 248, 248, 1);
+      color: rgba(17, 17, 17, 1);
+      width: 36px;
+      height: 36px;
+    }
 
-      &__img {
-        width: 120px;
-        height: 120px;
-        object-fit: cover;
-      }
-
-      &__text {
-        text-align: start;
-        margin: 10px 10px 10px 30px;
-
-        &__title {
-          font-family: Old Standard TT;
-          font-size: 24px;
-          font-weight: 400;
-          line-height: 24px;
-          letter-spacing: -0.72px;
-          color: rgba(34, 34, 34, 1);
-          margin-bottom: 10px;
-        }
-
-        &__subtitle {
-          font-family: Roboto;
-          font-size: 14px;
-          font-weight: 400;
-          line-height: 24px;
-        }
-      }
+    ::after {
+      font-size: x-small;
     }
   }
-  .img-slider3 {
-    width: 100%;
-    margin: 42px 0;
+}
+
+.slider {
+  .swiperMenuFoodHome2 {
+
+    .swiper-slide {
+      padding: 16px 16px 40px;
+
+      .img-slider3 {
+        width: 100%;
+      }
+
+    }
+
+    .swiper-pagination-bullet-active {
+      background: rgba(190, 173, 142, 1);
+    }
+
   }
+
 }

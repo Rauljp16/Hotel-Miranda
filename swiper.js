@@ -1,27 +1,16 @@
-const swiper = new Swiper(".swiper", {
+const swiperRoomsHome = new Swiper(".swiperRoomsHome", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
 
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
-  // Navigation arrows
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
   },
 });
-const swiper2 = new Swiper(".swiper2", {
+
+const swiperFacilitiesHome = new Swiper(".swiperFacilitiesHome", {
   // Optional parameters
   direction: "horizontal",
   loop: true,
@@ -31,16 +20,28 @@ const swiper2 = new Swiper(".swiper2", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+
+const swiperMenuFoodHome1 = new Swiper(".swiperMenuFoodHome1", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
 
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // Navigation arrows
+});
 
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
+const swiperMenuFoodHome2 = new Swiper(".swiperMenuFoodHome2", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
