@@ -1,0 +1,37 @@
+@import "mixins";
+
+
+.breadcrumb {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    margin-right: 20px;
+    padding: 16px;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17.23px;
+
+
+    &__link {
+        position: relative;
+        color: rgba(34, 34, 34, 1);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    &__divider {
+        position: relative;
+        color: rgba(34, 34, 34, 1);
+        margin: 0 8px;
+    }
+
+    &__pageActual {
+        position: relative;
+        color: rgba(190, 173, 142, 1);
+        cursor: default
+    }
+
+}

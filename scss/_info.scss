@@ -1,27 +1,33 @@
 @import "mixins";
 
 .info {
-  padding: 140px 20px;
-  background-color: rgba(51, 51, 51, 1);
-  color: rgba(255, 255, 255, 1);
+    position: relative;
+    padding: 140px 20px;
+    background-color: rgba(51, 51, 51, 1);
+    color: rgba(255, 255, 255, 1);
 
-  &__subTitle {
-    width: 70%;
-    @include subTitleArchivo(rgba(255, 255, 255, 1));
-  }
+    &__subTitle {
+        width: 70%;
+        @include subTitleArchivo(rgba(255, 255, 255, 1));
+    }
 
-  &__title {
-    @include title(rgba(255, 255, 255, 1));
-  }
+    &__title {
+        @include title(rgba(255, 255, 255, 1));
+    }
 
-  &__take {
-    @include button(rgba(190, 173, 142, 1), none);
-    width: 216px;
-    margin: 0 20px 20px 0;
-  }
+    &__take {
+        @include button(rgba(190, 173, 142, 1), none);
+        width: 216px;
+        margin: 0 20px 20px 0;
+    }
 
-  &__learn {
-    @include button(transparent, 2px solid rgba(255, 255, 255, 0.33));
-    width: 216px;
-  }
+    &__learn {
+        @include button(transparent, 2px solid rgba(255, 255, 255, 0.33));
+        width: 216px;
+    }
+}
+
+.infoSmall {
+    padding: 120px 20px 60px;
+
 }

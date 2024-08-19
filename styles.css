@@ -121,6 +121,7 @@
 }
 
 .info {
+  position: relative;
   padding: 140px 20px;
   background-color: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
@@ -171,6 +172,10 @@
   width: 216px;
 }
 
+.infoSmall {
+  padding: 120px 20px 60px;
+}
+
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -205,291 +210,218 @@
   color: rgb(34, 34, 34);
 }
 
-.date {
-  position: relative;
-  background-color: rgb(34, 34, 34);
-  padding: 36px 20px;
+footer {
+  background-image: url("../images/fondo.jpg");
+  margin: 40px 20px 0;
 }
-.date label {
-  font-family: "roboto", sans-serif;
-  line-height: 16px;
-  color: rgb(255, 255, 255);
-  width: 100%;
-}
-.date input {
+footer .logo {
   display: flex;
-  width: 100%;
-  max-width: 300px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 2px solid rgb(190, 173, 142);
-  padding: 0 0 16px 40px;
-  color: rgb(104, 104, 104);
-  outline: none;
-  margin: 20px 0 32px;
-  letter-spacing: 1px;
-  font-family: "roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+  align-items: center;
+  gap: 16px;
+  font-family: "Archivo", sans-serif;
 }
-.date ::-webkit-calendar-picker-indicator {
-  position: absolute;
-  left: 0;
-  cursor: pointer;
-  width: 88%;
-  margin-left: 15px;
-  opacity: 0;
-}
-.date .calendarArrival {
-  position: absolute;
-  left: 20px;
-  top: 75px;
-  pointer-events: none;
-}
-.date .calendarDeparture {
-  position: absolute;
-  left: 20px;
-  top: 180px;
-  pointer-events: none;
-}
-.date button {
+footer .logo .iconLogo {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
   background-color: rgb(190, 173, 142);
-  border: none;
   color: rgb(255, 255, 255);
-  height: 60px;
-  font-family: "Archivo", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: 2.8px;
-  cursor: pointer;
-  width: 250px;
+  margin: 0 5px 0 0;
 }
-
-.textArchivo {
+footer .logo div .p1 {
+  font-size: 26px;
+}
+footer .logo div .p2 {
+  font-size: 26px;
+}
+footer .footerText {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: rgb(119, 119, 119);
+  margin: 36px 0 20px;
+  font-size: 16px;
 }
-
-.title {
-  font-family: "Old Standard TT", serif;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-  color: rgb(34, 34, 34);
-}
-
-.subTitle {
-  font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 15.23px;
-  letter-spacing: 2.79px;
-  color: rgb(119, 119, 119);
-}
-
-.subTitleRoboto {
-  font-family: "roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: rgb(34, 34, 34);
-}
-
-.aboutUsHome {
-  width: 100%;
-  color: rgb(255, 255, 255);
-}
-.aboutUsHome .info {
-  margin-top: 60px;
-  background-color: rgb(249, 249, 249);
-  padding: 38px 20px 50px;
-}
-.aboutUsHome .info__title {
-  color: rgb(17, 17, 17);
-  margin-bottom: 14px;
-  font-weight: 400;
-}
-.aboutUsHome .info__subTitle {
-  color: rgb(119, 119, 119);
-  width: 100%;
-  margin-bottom: 30px;
-}
-.aboutUsHome .info .text {
-  font-family: "Archivo", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgb(119, 119, 119);
-}
-.aboutUsHome .info button {
-  background-color: rgb(190, 173, 142);
-  border: none;
-  color: rgb(255, 255, 255);
-  height: 60px;
-  font-family: "Archivo", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: 2.8px;
-  cursor: pointer;
-  width: 217px;
-  margin: 23px 0;
-}
-.aboutUsHome .team {
-  position: relative;
-  top: -15px;
-  margin: 0 52px 30px;
-  box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
-}
-.aboutUsHome .team img {
-  width: 270px;
-  height: 300px;
-}
-.aboutUsHome .team .divTeam {
-  padding-bottom: 50px;
-}
-.aboutUsHome .team div {
-  position: relative;
-  width: 100%;
-  height: 50%;
-  text-align: center;
-  line-height: 0;
-}
-.aboutUsHome .team div .teamGold {
-  width: 68px;
-  height: 50px;
-  margin: 54px 0 25px;
-}
-.aboutUsHome .team div .teamGrey {
-  position: absolute;
-  width: 144px;
-  height: 106px;
-  right: 0;
-  top: 50px;
-  z-index: -2;
-}
-.aboutUsHome .team div .info__title {
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: -0.9px;
-  margin: 0;
-}
-.aboutUsHome .team div .textRoboto {
-  font-family: "roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: rgb(17, 17, 17);
-  margin: 35px 35px 0;
-}
-.aboutUsHome__luxury {
-  line-height: 0;
-  margin: 0 52px 52px;
-}
-.aboutUsHome__luxury img {
-  width: 270px;
-  height: 300px;
-}
-.aboutUsHome__luxury div {
-  width: 100%;
-  height: 50%;
-  text-align: center;
-  background-color: rgb(34, 34, 34);
-  padding: 35px;
-}
-.aboutUsHome__luxury div .teamGold {
-  width: 68px;
-  height: 50px;
-  margin: 25px;
-}
-.aboutUsHome__luxury div .info__title {
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: -0.9px;
-  margin-bottom: 20px;
-  color: rgb(255, 255, 255);
-}
-.aboutUsHome__luxury div .textRoboto {
-  font-family: "roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: rgb(255, 255, 255);
-}
-
-.textArchivo {
-  font-family: "Archivo", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgb(119, 119, 119);
-}
-
-.title {
-  font-family: "Old Standard TT", serif;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-  color: rgb(34, 34, 34);
-}
-
-.subTitle {
-  font-family: "Archivo", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 15.23px;
-  letter-spacing: 2.79px;
-  color: rgb(119, 119, 119);
-}
-
-.subTitleRoboto {
-  font-family: "roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: rgb(34, 34, 34);
-}
-
-.roomsHome {
-  text-align: center;
-  z-index: -1;
-}
-.roomsHome__subTitle {
-  font-family: "Archivo", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 2.8px;
-  line-height: 18px;
-  margin-bottom: 38px;
-  color: rgb(119, 119, 119);
-  margin-bottom: 23px;
-}
-.roomsHome__title {
-  font-family: "Old Standard TT", serif;
-  font-size: 56px;
-  line-height: 60px;
-  letter-spacing: -1.2px;
-  margin-bottom: 38px;
-  color: rgb(34, 34, 34);
-}
-.roomsHome__icons {
-  position: relative;
-  z-index: 5;
-  top: 20px;
-  width: 256px;
-  margin: 0 auto;
+footer .rrss {
   display: flex;
   justify-content: space-between;
+  width: 70%;
+}
+footer .rrss div {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: rgb(248, 248, 248);
+  width: 40px;
+  height: 40px;
+}
+footer .rrss .rrss-gold {
+  background-color: rgb(190, 173, 142);
+}
+footer .services .servicesTitle {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(34, 34, 34);
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin: 30px 0;
+}
+footer .services article {
+  display: flex;
+}
+footer .services article li {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+  font-size: 16px;
+  line-height: 48px;
+  list-style-type: none;
+}
+footer .contact {
+  font-family: "Old Standard TT", serif;
+  font-size: 20px;
+  line-height: 24px;
+}
+footer .contact__title {
+  font-size: 24px;
+  margin-top: 30px;
+}
+footer .contact__container {
+  display: flex;
+  margin: 30px 0;
+}
+footer .contact__container article {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  justify-content: space-around;
+  margin-right: 23px;
+}
+footer .contact__container article span {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+}
+footer .copyright {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+}
+footer .copyright p {
+  margin: 20px 0 20px 20px;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: -0.5px;
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
+}
+
+.breadcrumb {
+  position: absolute;
+  bottom: 0;
+  right: 0;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 8px 16px rgba(138, 138, 138, 0.05);
-  padding: 12px;
+  display: flex;
+  margin-right: 20px;
+  padding: 16px;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.23px;
+}
+.breadcrumb__link {
+  position: relative;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  cursor: pointer;
+}
+.breadcrumb__divider {
+  position: relative;
+  color: rgb(34, 34, 34);
+  margin: 0 8px;
+}
+.breadcrumb__pageActual {
+  position: relative;
+  color: rgb(190, 173, 142);
+  cursor: default;
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
 
 .textArchivo {
@@ -776,30 +708,178 @@
   margin: 28px 0 40px;
 }
 
-.menuFoodHome {
+.videoHome--about {
+  background-color: rgb(255, 255, 255);
+  padding: 50px 20px 0;
+}
+.videoHome--about .title--about {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(34, 34, 34);
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -1.16px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
+}
+
+.aboutUsHome {
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+.aboutUsHome .info {
+  margin-top: 60px;
+  background-color: rgb(249, 249, 249);
+  padding: 38px 20px 50px;
+}
+.aboutUsHome .info__title {
+  color: rgb(17, 17, 17);
+  margin-bottom: 14px;
+  font-weight: 400;
+}
+.aboutUsHome .info__subTitle {
+  color: rgb(119, 119, 119);
+  width: 100%;
+  margin-bottom: 30px;
+}
+.aboutUsHome .info .text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+.aboutUsHome .info button {
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 217px;
+  margin: 23px 0;
+}
+.aboutUsHome .team {
+  position: relative;
+  top: -15px;
+  margin: 0 52px 30px;
+  box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
+}
+.aboutUsHome .team img {
+  width: 270px;
+  height: 300px;
+}
+.aboutUsHome .team .divTeam {
+  padding-bottom: 50px;
+}
+.aboutUsHome .team div {
   position: relative;
   width: 100%;
+  height: 50%;
+  text-align: center;
+  line-height: 0;
 }
-.menuFoodHome__iconSvg {
-  background-image: url("../svg/foodMovil.svg");
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: right;
-  position: relative;
-  top: 0px;
-  left: 0;
+.aboutUsHome .team div .teamGold {
+  width: 68px;
+  height: 50px;
+  margin: 54px 0 25px;
+}
+.aboutUsHome .team div .teamGrey {
+  position: absolute;
+  width: 144px;
+  height: 106px;
+  right: 0;
+  top: 50px;
+  z-index: -2;
+}
+.aboutUsHome .team div .info__title {
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  margin: 0;
+}
+.aboutUsHome .team div .textRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(17, 17, 17);
+  margin: 35px 35px 0;
+}
+.aboutUsHome__luxury {
+  line-height: 0;
+  margin: 0 52px 52px;
+}
+.aboutUsHome__luxury img {
+  width: 270px;
+  height: 300px;
+}
+.aboutUsHome__luxury div {
   width: 100%;
-  height: 114.5px;
+  height: 50%;
+  text-align: center;
+  background-color: rgb(34, 34, 34);
+  padding: 35px;
 }
-.menuFoodHome__containerText {
-  width: 100%;
-  margin: 0 20px 30px 20px;
+.aboutUsHome__luxury div .teamGold {
+  width: 68px;
+  height: 50px;
+  margin: 25px;
 }
-.menuFoodHome__containerText .subTitle--containerText {
+.aboutUsHome__luxury div .info__title {
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
   margin-bottom: 20px;
+  color: rgb(255, 255, 255);
 }
-.menuFoodHome__containerText .subTitle--containerText {
-  margin-bottom: 20px;
+.aboutUsHome__luxury div .textRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
 }
 
 .textArchivo {
@@ -903,120 +983,214 @@
   color: rgb(34, 34, 34);
 }
 
-footer {
-  background-image: url("../images/fondo.jpg");
-  margin: 40px 20px 0;
+.date {
+  position: relative;
+  background-color: rgb(34, 34, 34);
+  padding: 36px 20px;
 }
-footer .logo {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  font-family: "Archivo", sans-serif;
-}
-footer .logo .iconLogo {
-  width: 80px;
-  height: 80px;
-  font-size: 40px;
-  background-color: rgb(190, 173, 142);
+.date label {
+  font-family: "roboto", sans-serif;
+  line-height: 16px;
   color: rgb(255, 255, 255);
-  margin: 0 5px 0 0;
+  width: 100%;
 }
-footer .logo div .p1 {
-  font-size: 26px;
+.date input {
+  display: flex;
+  width: 100%;
+  max-width: 300px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgb(190, 173, 142);
+  padding: 0 0 16px 40px;
+  color: rgb(104, 104, 104);
+  outline: none;
+  margin: 20px 0 32px;
+  letter-spacing: 1px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
-footer .logo div .p2 {
-  font-size: 26px;
+.date ::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  width: 88%;
+  margin-left: 15px;
+  opacity: 0;
 }
-footer .footerText {
+.date .calendarArrival {
+  position: absolute;
+  left: 20px;
+  top: 75px;
+  pointer-events: none;
+}
+.date .calendarDeparture {
+  position: absolute;
+  left: 20px;
+  top: 180px;
+  pointer-events: none;
+}
+.date button {
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 250px;
+}
+
+.menuFoodHome {
+  position: relative;
+  width: 100%;
+}
+.menuFoodHome__iconSvg {
+  background-image: url("../svg/foodMovil.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  position: relative;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 114.5px;
+}
+.menuFoodHome__containerText {
+  width: 100%;
+  margin: 0 20px 30px 20px;
+}
+.menuFoodHome__containerText .subTitle--containerText {
+  margin-bottom: 20px;
+}
+.menuFoodHome__containerText .subTitle--containerText {
+  margin-bottom: 20px;
+}
+
+.textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: rgb(119, 119, 119);
-  margin: 36px 0 20px;
-  font-size: 16px;
 }
-footer .rrss {
-  display: flex;
-  justify-content: space-between;
-  width: 70%;
+
+.title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
 }
-footer .rrss div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(248, 248, 248);
-  width: 40px;
-  height: 40px;
+
+.subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
 }
-footer .rrss .rrss-gold {
-  background-color: rgb(190, 173, 142);
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
 }
-footer .services .servicesTitle {
+
+.roomsHome {
+  text-align: center;
+  z-index: -1;
+}
+.roomsHome__subTitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  margin-bottom: 38px;
+  color: rgb(119, 119, 119);
+  margin-bottom: 23px;
+}
+.roomsHome__title {
   font-family: "Old Standard TT", serif;
   font-size: 56px;
   line-height: 60px;
   letter-spacing: -1.2px;
   margin-bottom: 38px;
   color: rgb(34, 34, 34);
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: 0;
-  margin: 30px 0;
 }
-footer .services article {
+.roomsHome__icons {
+  position: relative;
+  z-index: 5;
+  top: 20px;
+  width: 256px;
+  margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 16px rgba(138, 138, 138, 0.05);
+  padding: 12px;
 }
-footer .services article li {
-  font-family: "roboto", sans-serif;
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 22px;
+  line-height: 24px;
   color: rgb(119, 119, 119);
-  font-size: 16px;
-  line-height: 48px;
-  list-style-type: none;
 }
-footer .contact {
+
+.title {
   font-family: "Old Standard TT", serif;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
 }
-footer .contact__title {
-  font-size: 24px;
-  margin-top: 30px;
+
+.subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
 }
-footer .contact__container {
-  display: flex;
-  margin: 30px 0;
-}
-footer .contact__container article {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
-  justify-content: space-around;
-  margin-right: 23px;
-}
-footer .contact__container article span {
+
+.subTitleRoboto {
   font-family: "roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: rgb(119, 119, 119);
+  color: rgb(34, 34, 34);
 }
-footer .copyright {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  background-color: rgb(248, 248, 248);
-}
-footer .copyright p {
-  margin: 20px 0 20px 20px;
-  font-family: "roboto", sans-serif;
-  font-size: 16px;
+
+.iconInfo {
+  margin: 0 20px;
+  font-family: Archivo;
+  font-size: 12px;
   font-weight: 700;
-  line-height: 18px;
-  letter-spacing: -0.5px;
+  line-height: 14px;
+  letter-spacing: 2.4px;
+  text-align: center;
+}
+.iconInfo__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.iconInfo .container--airport {
+  background-color: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
 }
 
 html,

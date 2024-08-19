@@ -1,13 +1,26 @@
 @import "scss/header";
 @import "scss/info";
-@import "scss/form";
-@import "scss/aboutUsHome";
-@import "scss/roomsHome";
+@import "scss/footer";
+@import "scss/breadcrumb";
+@import "scss/mixins";
 @import "scss/swiper";
 @import "scss/videoHome";
-@import "scss/menuFoodsHome";
-@import "scss/benefits";
-@import "scss/footer";
+@import "scss/homePage/aboutUsHome";
+@import "scss/homePage/benefits";
+@import "scss/homePage/form";
+@import "scss/homePage/menuFoodsHome";
+@import "scss/homePage/roomsHome";
+@import "scss/aboutUsPage/iconInfo";
+
+
+
+
+
+
+
+
+
+
 
 html,
 * {

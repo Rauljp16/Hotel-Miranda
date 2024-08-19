@@ -1,0 +1,31 @@
+@import "../mixins";
+
+
+.iconInfo {
+    margin: 0 20px;
+    font-family: Archivo;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 2.40px;
+    text-align: center;
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+
+        &__item {
+            //padding: 20px;
+            //text-align: center;
+            //width: 158px;
+            //height: 158px;
+        }
+    }
+
+    .container--airport {
+        background-color: rgba(190, 173, 142, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+}
