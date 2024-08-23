@@ -537,6 +537,7 @@ footer .copyright p {
 .slider .swiperFacilitiesHome .facilityCard {
   text-align: start;
   padding: 25px 35px 50px;
+  margin: 0 20px;
 }
 .slider .swiperFacilitiesHome .facilityCard .iconContainer {
   display: flex;
@@ -1188,7 +1189,301 @@ footer .copyright p {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+.iconInfo__container__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  width: 158px;
+  height: 158px;
+}
 .iconInfo .container--airport {
+  background-color: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
+}
+
+.facilitiesRestaurant {
+  width: 100%;
+  padding: 0 20px;
+}
+.facilitiesRestaurant__container {
+  padding: 0 20px;
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+}
+.facilitiesRestaurant__container__img {
+  width: 100%;
+}
+.facilitiesRestaurant__container__info {
+  margin: 30px 0;
+}
+.facilitiesRestaurant__container__title {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -1.05px;
+}
+.facilitiesRestaurant__container__text {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  margin: 20px 0;
+}
+.facilitiesRestaurant__container__button {
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 216px;
+  margin: 0 20px 20px 0;
+}
+
+.facilitiesAbout {
+  margin: 50px 0 0;
+  background-color: rgb(34, 34, 34);
+}
+
+.titleFacilitiesAbout {
+  color: rgb(255, 255, 255);
+}
+
+.subTitle--about {
+  color: rgb(255, 255, 255);
+  padding: 48px 0 0 0;
+}
+
+.facilityCardAbout {
+  background-color: rgb(41, 41, 41);
+}
+
+.numberFacilitiesAbout {
+  color: rgb(34, 34, 34) !important;
+}
+
+.title--about {
+  color: rgb(255, 255, 255);
+}
+
+.text--about {
+  color: rgb(255, 255, 255);
+}
+
+.sliderAbout1 {
+  padding: 0 0 40px 0;
+}
+
+.slider {
+  position: relative;
+}
+.slider .swiperAbout1 .facilityCard {
+  text-align: start;
+  padding: 0px 20px 55px;
+  margin: 25px 20px 35px;
+}
+.slider .swiperAbout1 .facilityCard .iconContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.slider .swiperAbout1 .facilityCard .iconContainer__svg {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+.slider .swiperAbout1 .facilityCard .iconContainer__number {
+  font-family: Archivo;
+  font-size: 120px;
+  font-weight: 700;
+  line-height: 130px;
+  color: rgba(34, 34, 34, 0.04);
+  margin-bottom: 40px;
+}
+.slider .swiperAbout1 .facilityCard .title--small {
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+  margin: 20px 0 25px;
+}
+.slider .swiperAbout1 .swiper-pagination-bullet-active {
+  background: rgb(190, 173, 142);
+}
+.slider .swiperAbout1 .paginationsAbout1 {
+  position: absolute;
+  bottom: 0;
+}
+
+.counter {
+  width: 100%;
+  padding: 40px 20px 0 20px;
+}
+.counter .subTitleAbout {
+  margin: 20px 0;
+}
+.counter .titleAbout {
+  margin: 20px 0;
+}
+
+.containerCardsAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.containerCardsAbout__card {
+  width: 100%;
+  display: flex;
+  margin: 30px 0;
+}
+.containerCardsAbout__card__div {
+  width: 50%;
+  text-align: center;
+}
+.containerCardsAbout__card__div__number {
+  font-family: "Old Standard TT" sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+}
+.containerCardsAbout__card__div__text {
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgb(119, 119, 119);
+}
+
+.slider .swiperAbout2 .swiper-slide {
+  padding: 16px 16px 40px;
+}
+.slider .swiperAbout2 .swiper-slide .img-slider3 {
+  width: 100%;
+}
+.slider .swiperAbout2 .swiper-pagination-bullet-active {
+  background: rgb(190, 173, 142);
+}
+
+.roomsPage {
+  width: 100%;
+  padding: 40px 20px 20px;
+}
+
+.roomcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+.roomcard__img {
+  width: 100%;
+  max-width: 335px;
+  height: 55%;
+}
+.roomcard__icons {
+  position: relative;
+  z-index: 5;
+  top: -18px;
+  width: 256px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 8px 16px rgba(138, 138, 138, 0.05);
+  padding: 12px;
+}
+.roomcard__minimal {
+  text-align: center;
+  padding: 10px 15px;
+}
+.roomcard__minimal__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.72px;
+}
+.roomcard__minimal__subTitle {
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  margin: 18px 0;
+}
+.roomcard__minimal__divPrice {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17.41px;
+  text-align: right;
+}
+.roomcard__minimal__divPrice__price {
+  color: rgb(190, 173, 142);
+}
+.roomcard__minimal__divPrice__booking {
+  color: rgb(189, 189, 189);
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination__number {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  width: 39px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination .pagination--2 {
   background-color: rgb(190, 173, 142);
   color: rgb(255, 255, 255);
 }

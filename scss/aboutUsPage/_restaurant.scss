@@ -1,0 +1,37 @@
+@import "../mixins";
+
+.facilitiesRestaurant {
+    width: 100%;
+    padding: 0 20px;
+
+    &__container {
+        padding: 0 20px;
+        box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+
+        &__img {
+            width: 100%;
+        }
+
+        &__info {
+            margin: 30px 0;
+
+        }
+
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+            letter-spacing: -1.05px;
+        }
+
+        &__text {
+            @include textArchivo(rgba(119, 119, 119, 1));
+            margin: 20px 0
+        }
+
+        &__button {
+            @include button(rgba(190, 173, 142, 1), none);
+            width: 216px;
+            margin: 0 20px 20px 0;
+        }
+    }
+}

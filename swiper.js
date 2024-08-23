@@ -45,3 +45,26 @@ const swiperMenuFoodHome2 = new Swiper(".swiperMenuFoodHome2", {
     clickable: true,
   },
 });
+
+const swiperAbout1 = new Swiper(".swiperAbout1", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+const swiperAbout2 = new Swiper(".swiperAbout2", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});

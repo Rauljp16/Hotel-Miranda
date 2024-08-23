@@ -1,0 +1,68 @@
+.counter {
+    width: 100%;
+    padding: 40px 20px 0 20px;
+
+
+    .subTitleAbout {
+        margin: 20px 0;
+    }
+
+    .titleAbout {
+        margin: 20px 0;
+    }
+
+
+}
+
+.containerCardsAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__card {
+        width: 100%;
+        display: flex;
+        margin: 30px 0;
+
+        &__div {
+            width: 50%;
+            text-align: center;
+
+            &__number {
+                font-family: "Old Standard TT" sans-serif;
+                font-size: 60px;
+                font-weight: 400;
+                line-height: 60px;
+                letter-spacing: -1.8px;
+            }
+
+            &__text {
+                font-family: "roboto", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                color: rgba(119, 119, 119, 1);
+            }
+        }
+    }
+}
+
+.slider {
+    .swiperAbout2 {
+
+        .swiper-slide {
+            padding: 16px 16px 40px;
+
+            .img-slider3 {
+                width: 100%;
+            }
+
+        }
+
+        .swiper-pagination-bullet-active {
+            background: rgba(190, 173, 142, 1);
+        }
+
+    }
+
+}

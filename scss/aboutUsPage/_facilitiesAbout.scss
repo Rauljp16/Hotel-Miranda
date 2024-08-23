@@ -1,0 +1,83 @@
+.facilitiesAbout {
+    margin: 50px 0 0;
+    background-color: rgba(34, 34, 34, 1);
+}
+
+.titleFacilitiesAbout {
+    color: rgba(255, 255, 255, 1);
+}
+
+.subTitle--about {
+    color: rgba(255, 255, 255, 1);
+    padding: 48px 0 0 0;
+}
+
+.facilityCardAbout {
+    background-color: rgba(41, 41, 41, 1);
+}
+
+.numberFacilitiesAbout {
+    color: rgba(34, 34, 34, 1) !important;
+}
+
+.title--about {
+    color: rgba(255, 255, 255, 1);
+}
+
+.text--about {
+    color: rgba(255, 255, 255, 1);
+}
+
+.sliderAbout1 {
+    padding: 0 0 40px 0;
+}
+
+.slider {
+    position: relative;
+
+    .swiperAbout1 {
+
+        .facilityCard {
+            text-align: start;
+            padding: 0px 20px 55px;
+            margin: 25px 20px 35px;
+
+            .iconContainer {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+
+                &__svg {
+                    width: 70px;
+                    height: 70px;
+                    margin-bottom: 20px;
+                }
+
+                &__number {
+                    font-family: Archivo;
+                    font-size: 120px;
+                    font-weight: 700;
+                    line-height: 130px;
+                    color: rgba(34, 34, 34, 0.04);
+                    margin-bottom: 40px;
+                }
+            }
+
+            .title--small {
+                font-size: 30px;
+                line-height: 30px;
+                letter-spacing: -0.9px;
+                margin: 20px 0 25px;
+            }
+        }
+
+        .swiper-pagination-bullet-active {
+            background: rgba(190, 173, 142, 1);
+        }
+
+        .paginationsAbout1 {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
