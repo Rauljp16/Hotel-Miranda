@@ -1467,6 +1467,7 @@ footer .copyright p {
 }
 .roomcard__minimal__divPrice__booking {
   color: rgb(189, 189, 189);
+  cursor: pointer;
 }
 
 .pagination {
@@ -1486,6 +1487,340 @@ footer .copyright p {
 .pagination .pagination--2 {
   background-color: rgb(190, 173, 142);
   color: rgb(255, 255, 255);
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
+}
+
+.roomDetails {
+  padding: 40px 20px;
+}
+
+.infoDetails__divTitle__subTitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  margin-bottom: 38px;
+  color: rgb(119, 119, 119);
+  margin: 0;
+  font-size: 14px;
+  line-height: 15.2px;
+}
+.infoDetails__divTitle__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(34, 34, 34);
+  margin: 12px 0;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.44px;
+  font-weight: 400;
+}
+.infoDetails__divPrice {
+  display: flex;
+  align-items: end;
+  margin: 10px 0;
+}
+.infoDetails__divPrice__price {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: rgb(190, 173, 142);
+}
+.infoDetails__divPrice__priceText {
+  margin-bottom: 7px;
+  color: rgb(190, 173, 142);
+}
+
+.CheckAvailability {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  max-width: 300px;
+  margin: 40px auto 20px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  line-height: 15.23px;
+}
+.CheckAvailability h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.CheckAvailability label {
+  font-family: "roboto", sans-serif;
+  line-height: 16px;
+  width: 100%;
+}
+.CheckAvailability input {
+  display: flex;
+  width: 100%;
+  background-color: rgb(248, 248, 248);
+  border: none;
+  border-bottom: 2px solid rgb(190, 173, 142);
+  padding: 16px 32px 16px 16px;
+  color: rgb(104, 104, 104);
+  outline: none;
+  margin: 10px 0 32px;
+  letter-spacing: 1px;
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.CheckAvailability ::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  width: 88%;
+  margin-left: 15px;
+  opacity: 0;
+}
+.CheckAvailability__checkIn {
+  position: absolute;
+  right: 16px;
+  top: 96px;
+  pointer-events: none;
+  font-size: 14px;
+  width: 20px;
+}
+.CheckAvailability__checkOut {
+  position: absolute;
+  right: 16px;
+  bottom: 110px;
+  pointer-events: none;
+  font-size: 14px;
+  width: 20px;
+}
+.CheckAvailability button {
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.textInfoRoom {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+  margin: 40px 0;
+}
+
+.amenitiesRoom__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.amenitiesRoom__div {
+  border-top: 1px solid rgb(241, 241, 241);
+  margin: 16px 0;
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.58px;
+  color: rgb(119, 119, 119);
+}
+.amenitiesRoom__div__icons {
+  width: 50%;
+  margin-top: 20px;
+}
+.amenitiesRoom li {
+  list-style: none;
+  display: flex;
+  margin: 16px 0;
+}
+.amenitiesRoom p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 17.58px;
+  color: rgb(119, 119, 119);
+  margin-left: 10px;
+}
+
+.founder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 0;
+  text-align: center;
+  gap: 13px;
+}
+.founder__containerImg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.founder__containerImg__divSvg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.founder__containerImg__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 16px -4px rgb(190, 173, 142);
+}
+.founder h1 {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: -0.89px;
+  margin-top: 18px;
+}
+.founder h3 {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(189, 172, 141);
+}
+.founder p {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+  margin-top: 10px;
+}
+
+.cancelation__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgb(34, 34, 34);
+}
+.cancelation__divText {
+  border-top: 1px solid rgb(241, 241, 241);
+  margin: 18px 0;
+  padding-top: 30px;
+}
+.cancelation__divText__p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.relatedRooms {
+  position: relative;
+  margin: 80px 0;
+}
+.relatedRooms .divRelatedTitle {
+  border-bottom: 1px solid rgb(241, 241, 241);
+  margin-bottom: 30px;
+}
+.relatedRooms .related--title {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+.relatedRooms .relatedRoom--icons {
+  top: -25px;
+}
+
+.slider {
+  text-align: center;
+}
+.slider .swiperRoomsRoom .swiper-button-next {
+  top: 120px;
+  right: 2px;
+  background-color: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+  width: 32px;
+  height: 32px;
+}
+.slider .swiperRoomsRoom .swiper-button-prev {
+  top: 120px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(17, 17, 17);
+  width: 32px;
+  height: 32px;
+  left: 2px;
+}
+.slider .swiperRoomsRoom ::after {
+  font-size: x-small;
+}
+.slider .swiperRoomsRoom .imgSlideRoom {
+  width: 100%;
+  height: 218px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider .swiperRoomsRoom .swiper-slide .minimal {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.slider .swiperRoomsRoom .swiper-slide .minimal__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(34, 34, 34);
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.slider .swiperRoomsRoom .swiper-slide .minimal__subTitle {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+  line-height: 24px;
+  margin-bottom: 12px;
 }
 
 html,

@@ -1,0 +1,54 @@
+.slider {
+    text-align: center;
+
+    .swiperRoomsRoom {
+        .swiper-button-next {
+            top: 120px;
+            right: 2px;
+            background-color: rgba(190, 173, 142, 1);
+            color: rgb(255, 255, 255, 1);
+            width: 32px;
+            height: 32px;
+        }
+
+        .swiper-button-prev {
+            top: 120px;
+            background-color: rgb(255, 255, 255, 1);
+            color: rgba(17, 17, 17, 1);
+            width: 32px;
+            height: 32px;
+            left: 2px;
+        }
+
+        ::after {
+            font-size: x-small;
+        }
+
+        .imgSlideRoom {
+            width: 100%;
+            height: 218px;
+            object-fit: cover;
+        }
+
+        .swiper-slide {
+            .minimal {
+                background-color: rgb(255, 255, 255);
+                position: relative;
+
+                &__title {
+                    @include title(rgba(34, 34, 34, 1));
+                    font-size: 24px;
+                    line-height: 24px;
+                    margin-bottom: 12px;
+                }
+
+                &__subTitle {
+                    @include subTitleRoboto(rgba(119, 119, 119, 1));
+                    line-height: 24px;
+                    margin-bottom: 12px;
+                }
+
+            }
+        }
+    }
+}

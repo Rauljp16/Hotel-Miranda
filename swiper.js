@@ -68,3 +68,14 @@ const swiperAbout2 = new Swiper(".swiperAbout2", {
     clickable: true,
   },
 });
+const swiperRoomsRoom = new Swiper(".swiperRoomsRoom", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
