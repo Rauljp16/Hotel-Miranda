@@ -213,6 +213,7 @@
 footer {
   background-image: url("../images/fondo.jpg");
   margin: 40px 20px 0;
+  padding-top: 30px;
 }
 footer .logo {
   display: flex;
@@ -1062,7 +1063,7 @@ footer .copyright p {
 }
 .menuFoodHome__containerText {
   width: 100%;
-  margin: 0 20px 30px 20px;
+  margin: 0 0 20px 0;
 }
 .menuFoodHome__containerText .subTitle--containerText {
   margin-bottom: 20px;
@@ -1821,6 +1822,301 @@ footer .copyright p {
   color: rgb(119, 119, 119);
   line-height: 24px;
   margin-bottom: 12px;
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
+}
+
+.offersPage {
+  margin: 40px 20px;
+}
+
+.offer {
+  box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+  margin: 30px 0;
+}
+.offer__divImg {
+  position: relative;
+}
+.offer__divImg__img {
+  width: 100%;
+}
+.offer__divImg__divPrices {
+  position: absolute;
+  right: 15px;
+  bottom: 16px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.offer__divImg__divPrices__old {
+  display: flex;
+  color: rgb(192, 166, 116);
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.offer__divImg__divPrices__old__number {
+  font-size: 23px;
+  text-decoration: line-through;
+}
+.offer__divImg__divPrices__old__text {
+  font-size: 11px;
+  line-height: 20px;
+}
+.offer__divImg__divPrices__new {
+  display: flex;
+  color: rgb(224, 61, 99);
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.offer__divImg__divPrices__new__number {
+  font-size: 30px;
+}
+.offer__divImg__divPrices__new__text {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.descriptionoffer {
+  margin: 10px 20px;
+}
+.descriptionoffer .title--descriptionoffer {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.4px;
+  color: rgb(34, 34, 34);
+  margin: 16px 0;
+}
+.descriptionoffer__text {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+}
+.descriptionoffer .divAmenitiesoffer {
+  border: none;
+  margin: 0;
+}
+.descriptionoffer__button {
+  background-color: rgb(189, 172, 141);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  width: 216px;
+  height: 60px;
+  margin: 10px 0 32px 0;
+}
+
+.popularRooms {
+  background-color: rgb(34, 34, 34);
+  padding: 40px 20px 10px;
+  margin: 50px 0;
+}
+.popularRooms__div {
+  text-align: center;
+}
+.popularRooms__div__subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(189, 172, 141);
+}
+.popularRooms__div__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  color: rgb(255, 255, 255);
+  margin: 20px 0 40px 0;
+}
+.popularRooms .relatedRoom--icons {
+  top: -25px;
+}
+.popularRooms .minimal--popularoffer {
+  bottom: 44px;
+  background-color: rgb(255, 255, 255) !important;
+  padding: 45px 20px 30px 20px;
+}
+
+.textArchivo {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(119, 119, 119);
+}
+
+.title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  color: rgb(34, 34, 34);
+}
+
+.subTitle {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.79px;
+  color: rgb(119, 119, 119);
+}
+
+.subTitleRoboto {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(34, 34, 34);
+}
+
+.contactPage {
+  margin: 20px 20px;
+}
+
+.hotelDetails .imgMap {
+  width: 100%;
+  margin: 20px 0 30px 0;
+}
+
+.detail {
+  position: relative;
+}
+.detail__number {
+  font-family: "roboto", sans-serif;
+  font-size: 200px;
+  font-weight: 700;
+  letter-spacing: -6px;
+  color: rgb(248, 248, 248);
+  text-align: end;
+}
+.detail__info {
+  position: absolute;
+  top: 63px;
+  display: flex;
+  padding-left: 10px;
+  align-items: start;
+}
+.detail__info__address {
+  padding: 0 40px 0 30px;
+}
+.detail__info__address__title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(34, 34, 34);
+  margin-bottom: 20px;
+}
+.detail__info__address__text {
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.41px;
+  color: rgb(119, 119, 119);
+  margin: 5px 0;
+}
+
+.formContact {
+  text-align: center;
+}
+.formContact__div {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+.formContact__div__text {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 20px 0 20px 50px;
+  border: none;
+}
+.formContact__div__number {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 20px 0 20px 50px;
+  border: none;
+}
+.formContact__div__email {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 20px 0 20px 50px;
+  border: none;
+}
+.formContact__div__svg {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.formContact__div .message {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  height: 150px;
+  border: none;
+}
+.formContact__div .message::-moz-placeholder {
+  font-family: sans-serif;
+}
+.formContact__div .message::placeholder {
+  font-family: sans-serif;
+}
+.formContact .buttonFormContact {
+  width: 258px;
+  height: 60px;
+  margin: 20px 0 40px;
+  background-color: rgb(190, 173, 142);
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
 }
 
 html,

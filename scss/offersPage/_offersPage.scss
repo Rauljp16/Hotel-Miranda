@@ -1,0 +1,139 @@
+@import "../mixins";
+
+.offersPage {
+    margin: 40px 20px;
+}
+
+.offer {
+    box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+    margin: 30px 0;
+
+    &__divImg {
+        position: relative;
+
+        &__img {
+            width: 100%;
+        }
+
+        &__divPrices {
+            position: absolute;
+            right: 15px;
+            bottom: 16px;
+            font-family: "Archivo", sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+
+            &__old {
+                display: flex;
+                color: rgb(192, 166, 116);
+                justify-content: flex-end;
+                align-items: flex-end;
+
+                &__number {
+                    font-size: 23px;
+                    text-decoration: line-through;
+
+                }
+
+                &__text {
+                    font-size: 11px;
+                    line-height: 20px;
+
+                }
+
+            }
+
+            &__new {
+                display: flex;
+                color: rgb(224, 61, 99);
+                justify-content: flex-end;
+
+                align-items: flex-end;
+
+                &__number {
+                    font-size: 30px;
+
+                }
+
+                &__text {
+                    font-size: 12px;
+                    line-height: 20px;
+
+                }
+
+            }
+
+
+        }
+    }
+}
+
+.descriptionoffer {
+    margin: 10px 20px;
+
+    .title--descriptionoffer {
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -1.4px;
+        color: rgba(34, 34, 34, 1);
+        margin: 16px 0
+    }
+
+    &__text {
+        @include subTitleRoboto(rgba(119, 119, 119, 1));
+    }
+
+    .divAmenitiesoffer {
+        border: none;
+        margin: 0;
+    }
+
+    &__button {
+        @include button(rgba(189, 172, 141, 1), none);
+        width: 216px;
+        height: 60px;
+        margin: 10px 0 32px 0;
+    }
+}
+
+.popularRooms {
+    background-color: rgba(34, 34, 34, 1);
+    padding: 40px 20px 10px;
+    margin: 50px 0;
+
+    &__div {
+        text-align: center;
+
+        &__subTitle {
+            font-family: "Archivo", sans-serif;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 15.23px;
+            letter-spacing: 2.79px;
+            color: rgba(189, 172, 141, 1);
+        }
+
+        &__title {
+            font-family: "Old Standard TT", sans-serif;
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 48px;
+            letter-spacing: -0.8px;
+            color: rgba(255, 255, 255, 1);
+            margin: 20px 0 40px 0;
+        }
+    }
+
+    .relatedRoom--icons {
+        //position: absolute;
+        top: -25px;
+
+    }
+
+    .minimal--popularoffer {
+        bottom: 44px;
+        background-color: rgba(255, 255, 255, 1) !important;
+        padding: 45px 20px 30px 20px;
+    }
+
+}
