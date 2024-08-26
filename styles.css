@@ -1065,7 +1065,7 @@ footer .copyright p {
 }
 .menuFoodHome__containerText {
   width: 100%;
-  margin: 0 20px;
+  padding: 0 20px;
 }
 .menuFoodHome__containerText .subTitle--containerText {
   margin-bottom: 20px;
