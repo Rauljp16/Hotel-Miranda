@@ -86,6 +86,28 @@
   font-size: 12px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .divHeaderDesktop {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background-color: rgb(34, 34, 34);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+  }
+  .divHeaderDesktop:hover {
+    opacity: 0.8;
+  }
+  .header {
+    position: fixed;
+    width: 80vw;
+    height: 90px;
+    top: 40px;
+    left: 10%;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -610,7 +632,7 @@ footer .copyright p {
 }
 .slider .swiperMenuFoodHome1 .button-prev-foodMenu {
   top: 90%;
-  left: 290px;
+  left: 72%;
   background-color: rgb(248, 248, 248);
   color: rgb(17, 17, 17);
   width: 36px;
@@ -854,7 +876,7 @@ footer .copyright p {
   margin: 0 52px 52px;
 }
 .aboutUsHome__luxury img {
-  width: 270px;
+  width: 100%;
   height: 300px;
 }
 .aboutUsHome__luxury div {
@@ -987,52 +1009,55 @@ footer .copyright p {
 
 .date {
   position: relative;
-  background-color: rgb(34, 34, 34);
+  width: 100%;
   padding: 36px 20px;
-}
-.date label {
+  background-color: rgb(34, 34, 34);
   font-family: "roboto", sans-serif;
-  line-height: 16px;
+}
+.date__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.date__form__label {
   color: rgb(255, 255, 255);
   width: 100%;
 }
-.date input {
-  display: flex;
+.date__form__input {
+  position: relative;
   width: 100%;
-  max-width: 300px;
+  height: 40px;
   background-color: transparent;
   border: none;
   border-bottom: 2px solid rgb(190, 173, 142);
-  padding: 0 0 16px 40px;
   color: rgb(104, 104, 104);
   outline: none;
-  margin: 20px 0 32px;
   letter-spacing: 1px;
-  font-family: "roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  margin: 15px 0;
+  text-indent: 20px;
 }
-.date ::-webkit-calendar-picker-indicator {
+.date__form ::-webkit-calendar-picker-indicator {
   position: absolute;
-  left: 0;
   cursor: pointer;
-  width: 88%;
-  margin-left: 15px;
+  width: 100%;
+  height: 100%;
   opacity: 0;
 }
-.date .calendarArrival {
+.date__form .calendarArrival {
   position: absolute;
   left: 20px;
-  top: 75px;
+  top: 80px;
   pointer-events: none;
 }
-.date .calendarDeparture {
+.date__form .calendarDeparture {
   position: absolute;
   left: 20px;
-  top: 180px;
+  top: 170px;
   pointer-events: none;
 }
-.date button {
+.date__form button {
   background-color: rgb(190, 173, 142);
   border: none;
   color: rgb(255, 255, 255);
@@ -1044,6 +1069,7 @@ footer .copyright p {
   letter-spacing: 2.8px;
   cursor: pointer;
   width: 250px;
+  margin-top: 30px;
 }
 
 .menuFoodHome {
@@ -1580,6 +1606,7 @@ footer .copyright p {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   line-height: 15.23px;
+  width: 100%;
 }
 .CheckAvailability h3 {
   text-align: center;
@@ -2075,18 +2102,21 @@ footer .copyright p {
   width: 100%;
   padding: 20px 0 20px 50px;
   border: none;
+  outline: none;
 }
 .formContact__div__number {
   background-color: rgb(248, 248, 248);
   width: 100%;
   padding: 20px 0 20px 50px;
   border: none;
+  outline: none;
 }
 .formContact__div__email {
   background-color: rgb(248, 248, 248);
   width: 100%;
   padding: 20px 0 20px 50px;
   border: none;
+  outline: none;
 }
 .formContact__div__svg {
   position: absolute;

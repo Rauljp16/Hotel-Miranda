@@ -17,37 +17,39 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav>
-      <img id="menuBurguerSvg" src="./svg/menuBurguer.svg" class="header__menuBurguerSvg" alt="menu burguer" />
-      <section class="header__logo">
-        <a href="/" class="iconLogo">H</a>
-        <div class="nameHotel">
-          <p class="p1">HOTEL</p>
-          <p class="p2">MIRANDA</p>
-        </div>
-      </section>
+  <div class="divHeaderDesktop" id="divHeaderDesktop">
+    <header class="header">
+      <nav>
+        <img id="menuBurguerSvg" src="./svg/menuBurguer.svg" class="header__menuBurguerSvg" alt="menu burguer" />
+        <section class="header__logo">
+          <a href="/" class="iconLogo">H</a>
+          <div class="nameHotel">
+            <p class="p1">HOTEL</p>
+            <p class="p2">MIRANDA</p>
+          </div>
+        </section>
 
-      <ul id="menuBurguer" class="menuDesktop">
-        <li>
-          <a href="/about.html" onclick="toggleMenu()">About Us</a>
-        </li>
-        <li>
-          <a href="/rooms.html" onclick="toggleMenu()">Rooms</a>
-        </li>
-        <li>
-          <a href="/offers.html" onclick="toggleMenu()">Offers</a>
-        </li>
-        <li>
-          <a href="/contact.html" onclick="toggleMenu()">Contact</a>
-        </li>
-      </ul>
-      <section class="header__iconSvg">
-        <img src="./svg/account.svg" class="accountSvg" alt="account" />
-        <img src="./svg/search.svg" class="searchSvg" alt="search" />
-      </section>
-    </nav>
-  </header>
+        <ul id="menuBurguer" class="menuDesktop">
+          <li>
+            <a href="/about.html" onclick="toggleMenu()">About Us</a>
+          </li>
+          <li>
+            <a href="/rooms.html" onclick="toggleMenu()">Rooms</a>
+          </li>
+          <li>
+            <a href="/offers.html" onclick="toggleMenu()">Offers</a>
+          </li>
+          <li>
+            <a href="/contact.html" onclick="toggleMenu()">Contact</a>
+          </li>
+        </ul>
+        <section class="header__iconSvg">
+          <img src="./svg/account.svg" class="accountSvg" alt="account" />
+          <img src="./svg/search.svg" class="searchSvg" alt="search" />
+        </section>
+      </nav>
+    </header>
+  </div>
 
   <section class="info">
     <p class="info__subTitle">THE ULTIMATE LUXURY EXPERIENCE</p>
@@ -57,13 +59,15 @@
   </section>
 
   <section class="date">
-    <label>Arrival Date</label>
-    <img src="./svg/calendar.svg" class="calendarArrival" alt="account" />
-    <input type="date" />
-    <label>Departure Date</label>
-    <img src="./svg/calendar.svg" class="calendarDeparture" alt="account" />
-    <input type="date" />
-    <button>CHECK AVAILABILITY</button>
+    <form class="date__form">
+      <label class="date__form__label">Arrival Date</label>
+      <img src="./svg/calendar.svg" class="calendarArrival" alt="account" />
+      <input class="date__form__input" type="date" />
+      <label class="date__form__label">Departure Date</label>
+      <img src="./svg/calendar.svg" class="calendarDeparture" alt="account" />
+      <input class="date__form__input" type="date" />
+      <button>CHECK AVAILABILITY</button>
+    </form>
   </section>
   <section class="aboutUsHome">
     <article class="info">
@@ -182,14 +186,14 @@
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
       commodo consequat you have to understand this.
     </p>
-    <iframe width="335px" height="270px"
+    <iframe width="100%" height="270px"
       src="https://www.youtube.com/embed/Bu3Doe45lcU?si=wtBeVepc7D6BgOBd&amp;start=15&end=75"
       title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      referrerpolicy=" strict-origin-when-cross-origin" allowfullscreen"></iframe>
     <button>BOOK NOW</button>
   </section>
-  <section class="facilitiesHome">
+  <section class=" facilitiesHome">
     <article class="slider">
       <p class="subTitle subTitle--noButton">FACILITIES</p>
       <p class="title">Core Features</p>
