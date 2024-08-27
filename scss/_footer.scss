@@ -2,8 +2,8 @@
 
 footer {
     background-image: url("../images/fondo.jpg");
-    margin: 40px 20px 0;
-    padding-top: 30px;
+    margin: 40px 0;
+    padding: 30px 30px;
 
     .logo {
         display: flex;
@@ -30,6 +30,7 @@ footer {
             }
         }
     }
+
 
     .footerText {
         @include textArchivo(rgba(119, 119, 119, 1));
@@ -122,5 +123,24 @@ footer {
             line-height: 18px;
             letter-spacing: -0.5px;
         }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .hoverZone {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 130px;
+        z-index: 4;
+    }
+
+    footer {}
+
+    .containerFooter {
+        max-width: 1000px;
+        //margin: 0 auto;
+        display: flex;
     }
 }

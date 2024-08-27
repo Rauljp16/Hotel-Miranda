@@ -70,7 +70,7 @@
   width: 36px;
   height: 36px;
   margin-left: 12px;
-  box-shadow: 0px 8px 10px rgba(139, 139, 139, 0.25);
+  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.25);
   font-size: 18px;
 }
 
@@ -93,12 +93,8 @@
     height: 80px;
     top: 0;
     background-color: rgb(34, 34, 34);
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 0.8s ease;
-  }
-  .divHeaderDesktop:hover {
-    opacity: 0.8;
+    z-index: 5;
+    transition: transform 0.7s ease-in-out;
   }
   .header {
     position: fixed;
@@ -106,6 +102,35 @@
     height: 90px;
     top: 40px;
     left: 10%;
+  }
+  .header__menuBurguerSvg {
+    display: none;
+  }
+  .header .menuDesktop {
+    position: relative;
+    display: flex;
+    z-index: 5;
+    background-color: transparent;
+    left: 40px;
+  }
+  .header nav {
+    padding-left: 5px;
+  }
+  .header__iconSvg {
+    width: 100px;
+    right: 30px;
+  }
+  .header__iconSvg__accountSvg {
+    border: 1px solid rgba(133, 133, 133, 0.2);
+    padding: 9px;
+  }
+  .header__iconSvg__searchSvg {
+    border: 1px solid rgba(133, 133, 133, 0.2);
+    padding: 9px;
+  }
+  .iconLogo {
+    width: 55px;
+    height: 55px;
   }
 }
 .textArchivo {
@@ -234,8 +259,8 @@
 
 footer {
   background-image: url("../images/fondo.jpg");
-  margin: 40px 20px 0;
-  padding-top: 30px;
+  margin: 40px 0;
+  padding: 30px 30px;
 }
 footer .logo {
   display: flex;
@@ -349,6 +374,20 @@ footer .copyright p {
   letter-spacing: -0.5px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .hoverZone {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 130px;
+    z-index: 4;
+  }
+  .containerFooter {
+    max-width: 1000px;
+    display: flex;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -1158,7 +1197,7 @@ footer .copyright p {
 }
 .roomsHome__icons {
   position: relative;
-  z-index: 5;
+  z-index: 2;
   top: 20px;
   width: 256px;
   margin: 0 auto;

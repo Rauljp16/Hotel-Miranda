@@ -14,10 +14,39 @@ menuBurguerSvg.addEventListener("click", () => {
   }
 });
 
-// const nav__svg = document.querySelector(".nav__svg");
+//header en desktop
 
-// const toggleMenu = () => {
-//   menuBurguer.classList.remove("menuDown");
-//   nav__svg.src = "./svg/Menu.svg";
-//   nav__svg.style.transform = "rotate(" + -180 + "deg)";
-// };
+const divHeaderDesktop = document.querySelector("#divHeaderDesktop");
+const hoverZone = document.querySelector("#hoverZone");
+let scrollPercentage;
+
+window.addEventListener("load", () => {
+  const update = () => {
+    scrollPercentage =
+      (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
+      100;
+    if (scrollPercentage < 0.5 || scrollPercentage > 95) {
+      divHeaderDesktop.style.transform = "translateY(0%)";
+    } else {
+      divHeaderDesktop.style.transform = "translateY(-150px)";
+    }
+  };
+  update();
+  window.addEventListener("scroll", update);
+});
+hoverZone.addEventListener("mouseenter", () => {
+  const scrollPercentage =
+    (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  if (scrollPercentage > 0.5 && scrollPercentage < 95) {
+    divHeaderDesktop.style.transform = "translateY(0%)";
+    console.log("esta dentro");
+  }
+});
+hoverZone.addEventListener("mouseleave", () => {
+  const scrollPercentage =
+    (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  if (scrollPercentage > 0.5 && scrollPercentage < 95) {
+    divHeaderDesktop.style.transform = "translateY(-150px)";
+    console.log("esta fuera");
+  }
+});
