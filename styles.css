@@ -543,15 +543,18 @@ footer .copyright p {
 .slider .subTitle--noButton {
   margin: 50px 0 20px;
 }
+.slider .swiperRoomsHome {
+  max-width: 1400px;
+}
 .slider .swiperRoomsHome .button-next-roomsHome {
-  top: 125px;
+  top: 145px;
   background-color: rgb(190, 173, 142);
   color: rgb(255, 255, 255);
   width: 32px;
   height: 32px;
 }
 .slider .swiperRoomsHome .button-prev-roomsHome {
-  top: 125px;
+  top: 145px;
   background-color: rgb(255, 255, 255);
   color: rgb(17, 17, 17);
   width: 32px;
@@ -562,9 +565,19 @@ footer .copyright p {
 }
 .slider .swiperRoomsHome .imgSlideRoom {
   width: 100%;
-  height: 250px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.slider .swiperRoomsHome .swiper-slide-active .minimal {
+  display: block;
+}
+.slider .swiperRoomsHome .minimal {
+  display: none;
+}
+.slider .swiperRoomsHome .swiper-slide-prev .minimal,
+.slider .swiperRoomsHome .swiper-slide-next .minimal {
+  display: none;
 }
 .slider .swiperRoomsHome .swiper-slide .minimal {
   padding: 19px 40px;
@@ -708,6 +721,30 @@ footer .copyright p {
   background: rgb(190, 173, 142);
 }
 
+@media only screen and (min-width: 1000px) {
+  .slider .swiperRoomsHome .button-next-roomsHome {
+    width: 50px !important;
+    height: 50px !important;
+    right: 26%;
+  }
+  .slider .swiperRoomsHome .button-prev-roomsHome {
+    width: 50px !important;
+    height: 50px !important;
+    left: 26%;
+  }
+  .slider .swiperRoomsHome ::after {
+    font-size: medium !important;
+  }
+  .slider .swiperRoomsHome .swiper-slide-active .minimal {
+    display: flex;
+    padding: 19px 0;
+    align-items: center;
+  }
+  .slider .swiperRoomsHome .swiper-slide-active .minimal .divDesktop {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -743,10 +780,13 @@ footer .copyright p {
 }
 
 .videoHome {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: rgb(34, 34, 34);
   padding: 64px 20px 0;
 }
-.videoHome__subTitle {
+.videoHome__containerVideoHome__subTitle {
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   font-size: 13px;
@@ -756,7 +796,7 @@ footer .copyright p {
   color: rgb(189, 172, 141);
   margin-bottom: 28px;
 }
-.videoHome__title {
+.videoHome__containerVideoHome__title {
   font-family: "Old Standard TT", serif;
   font-size: 56px;
   line-height: 60px;
@@ -764,16 +804,22 @@ footer .copyright p {
   margin-bottom: 38px;
   color: rgb(255, 255, 255);
   margin-bottom: 16px;
+  max-width: 500px;
 }
-.videoHome__text {
+.videoHome__containerVideoHome__text {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: rgb(194, 194, 194);
   margin-bottom: 30px;
+  max-width: 360px;
 }
-.videoHome button {
+.videoHome__containerVideoHome__videoDiv {
+  max-width: 440px;
+  margin: 0 auto;
+}
+.videoHome__containerVideoHome button {
   background-color: rgb(189, 172, 141);
   border: none;
   color: rgb(255, 255, 255);
@@ -806,6 +852,28 @@ footer .copyright p {
   margin-top: 30px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .videoHome {
+    flex-direction: row;
+    padding: 0;
+  }
+  .videoHome__containerVideoHome {
+    width: 65%;
+    padding: 70px 0 70px 180px;
+  }
+  .videoHome__containerVideoHome__videoDiv {
+    position: absolute;
+    top: 70px;
+    left: 45%;
+    right: 20%;
+    width: 570px;
+    height: 460px;
+  }
+  .videoHome .divGold {
+    width: 35%;
+    background-color: rgb(173, 157, 130);
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -1028,7 +1096,7 @@ footer .copyright p {
     font-size: 14px;
   }
   .aboutUsHome__info .text {
-    padding-right: 200px;
+    max-width: 400px;
   }
 }
 .textArchivo {

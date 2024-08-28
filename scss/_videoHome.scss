@@ -1,32 +1,41 @@
 @import "mixins";
 
 .videoHome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: rgba(34, 34, 34, 1);
     padding: 64px 20px 0;
 
-    &__subTitle {
-        @include subTitleArchivo(rgba(189, 172, 141, 1));
-        margin-bottom: 28px
+    &__containerVideoHome {
+        &__subTitle {
+            @include subTitleArchivo(rgba(189, 172, 141, 1));
+            margin-bottom: 28px;
+        }
+
+        &__title {
+            @include title(rgb(255, 255, 255));
+            margin-bottom: 16px;
+            max-width: 500px;
+        }
+
+        &__text {
+            @include textArchivo(rgba(194, 194, 194, 1));
+            margin-bottom: 30px;
+            max-width: 360px;
+        }
+
+        &__videoDiv {
+            max-width: 440px;
+            margin: 0 auto;
+        }
+
+        button {
+            @include button(rgba(189, 172, 141, 1), none);
+            width: 216px;
+            margin: 28px 0 40px;
+        }
     }
-
-    &__title {
-        @include title(rgba(255, 255, 255, 1));
-        margin-bottom: 16px
-    }
-
-
-    &__text {
-        @include textArchivo(rgba(194, 194, 194, 1));
-        margin-bottom: 30px
-    }
-
-    button {
-        @include button(rgba(189, 172, 141, 1), none);
-        width: 216px;
-        margin: 28px 0 40px;
-    }
-
-
 }
 
 .videoHome--about {
@@ -41,5 +50,30 @@
         text-align: center;
         margin-top: 30px;
     }
+}
 
+@media only screen and (min-width: 1000px) {
+    .videoHome {
+        flex-direction: row;
+        padding: 0;
+
+        &__containerVideoHome {
+            width: 65%;
+            padding: 70px 0 70px 180px;
+
+            &__videoDiv {
+                position: absolute;
+                top: 70px;
+                left: 45%;
+                right: 20%;
+                width: 570px;
+                height: 460px;
+            }
+        }
+
+        .divGold {
+            width: 35%;
+            background-color: rgba(173, 157, 130, 1);
+        }
+    }
 }

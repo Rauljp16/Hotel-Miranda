@@ -1,5 +1,7 @@
 const swiperRoomsHome = new Swiper(".swiperRoomsHome", {
   // Optional parameters
+  slidesPerView: 1,
+  centeredSlides: true,
   direction: "horizontal",
   loop: true,
 
@@ -7,6 +9,12 @@ const swiperRoomsHome = new Swiper(".swiperRoomsHome", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
 });
 

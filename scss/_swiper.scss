@@ -1,5 +1,6 @@
 @import "mixins";
 
+
 .slider {
   text-align: center;
 
@@ -8,8 +9,10 @@
   }
 
   .swiperRoomsHome {
+    max-width: 1400px;
+
     .button-next-roomsHome {
-      top: 125px;
+      top: 145px;
       background-color: rgba(190, 173, 142, 1);
       color: rgb(255, 255, 255, 1);
       width: 32px;
@@ -17,7 +20,7 @@
     }
 
     .button-prev-roomsHome {
-      top: 125px;
+      top: 145px;
       background-color: rgb(255, 255, 255, 1);
       color: rgba(17, 17, 17, 1);
       width: 32px;
@@ -30,8 +33,21 @@
 
     .imgSlideRoom {
       width: 100%;
-      height: 250px;
+      height: 300px;
       object-fit: cover;
+    }
+
+    .swiper-slide-active .minimal {
+      display: block;
+    }
+
+    .minimal {
+      display: none;
+    }
+
+    .swiper-slide-prev .minimal,
+    .swiper-slide-next .minimal {
+      display: none;
     }
 
     .swiper-slide {
@@ -202,4 +218,39 @@
 
   }
 
+}
+
+@media only screen and (min-width: 1000px) {
+  .slider {
+    .swiperRoomsHome {
+      .button-next-roomsHome {
+        width: 50px !important;
+        height: 50px !important;
+        right: 26%;
+
+      }
+
+      .button-prev-roomsHome {
+        width: 50px !important;
+        height: 50px !important;
+        left: 26%;
+      }
+
+      ::after {
+        font-size: medium !important;
+      }
+
+      .swiper-slide-active .minimal {
+        display: flex;
+        padding: 19px 0;
+        align-items: center;
+
+        .divDesktop {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+
+  }
 }
