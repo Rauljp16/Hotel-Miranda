@@ -167,10 +167,13 @@
   color: rgb(34, 34, 34);
 }
 
+.containerInfo {
+  background-color: rgb(51, 51, 51);
+}
+
 .info {
   position: relative;
   padding: 140px 20px;
-  background-color: rgb(51, 51, 51);
   color: rgb(255, 255, 255);
 }
 .info__subTitle {
@@ -223,6 +226,19 @@
   padding: 120px 20px 60px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .info {
+    max-width: 900px;
+    left: 14%;
+    padding: 210px 120px 70px 30px;
+  }
+  .info__title {
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 130px;
+    letter-spacing: -3.59px;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -381,7 +397,8 @@ footer .copyright p {
     left: 0;
     width: 100vw;
     height: 130px;
-    z-index: 4;
+    z-index: 6;
+    background-color: transparent;
   }
   .containerFooter {
     max-width: 1000px;
@@ -824,32 +841,44 @@ footer .copyright p {
 }
 
 .aboutUsHome {
+  position: relative;
   width: 100%;
-  color: rgb(255, 255, 255);
-}
-.aboutUsHome .info {
   margin-top: 60px;
-  background-color: rgb(249, 249, 249);
-  padding: 38px 20px 50px;
 }
-.aboutUsHome .info__title {
+.aboutUsHome__info {
+  position: relative;
+  padding: 38px 20px 180px;
+  margin-bottom: -60px;
+  background-color: rgb(249, 249, 249);
+}
+.aboutUsHome__info__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
   color: rgb(17, 17, 17);
   margin-bottom: 14px;
-  font-weight: 400;
+  max-width: 500px;
 }
-.aboutUsHome .info__subTitle {
+.aboutUsHome__info__subTitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  margin-bottom: 38px;
   color: rgb(119, 119, 119);
-  width: 100%;
   margin-bottom: 30px;
 }
-.aboutUsHome .info .text {
+.aboutUsHome__info .text {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: rgb(119, 119, 119);
 }
-.aboutUsHome .info button {
+.aboutUsHome__info button {
   background-color: rgb(190, 173, 142);
   border: none;
   color: rgb(255, 255, 255);
@@ -861,25 +890,34 @@ footer .copyright p {
   letter-spacing: 2.8px;
   cursor: pointer;
   width: 217px;
-  margin: 23px 0;
+  margin: 23px 0 0 0;
+}
+.aboutUsHome .containerTeamLuxury {
+  position: relative;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
 .aboutUsHome .team {
   position: relative;
-  top: -15px;
-  margin: 0 52px 30px;
-  box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .aboutUsHome .team img {
-  width: 270px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
 }
 .aboutUsHome .team .divTeam {
   padding-bottom: 50px;
+  box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
 }
 .aboutUsHome .team div {
   position: relative;
-  width: 100%;
-  height: 50%;
+  width: 270px;
+  height: 300px;
   text-align: center;
   line-height: 0;
 }
@@ -901,6 +939,7 @@ footer .copyright p {
   line-height: 30px;
   letter-spacing: -0.9px;
   margin: 0;
+  color: rgb(17, 17, 17);
 }
 .aboutUsHome .team div .textRoboto {
   font-family: "roboto", sans-serif;
@@ -911,33 +950,36 @@ footer .copyright p {
   margin: 35px 35px 0;
 }
 .aboutUsHome__luxury {
-  line-height: 0;
-  margin: 0 52px 52px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .aboutUsHome__luxury img {
   width: 100%;
-  height: 300px;
+  height: 100%;
 }
 .aboutUsHome__luxury div {
-  width: 100%;
-  height: 50%;
+  width: 270px;
+  height: 300px;
+}
+.aboutUsHome__luxury .divLuxury {
   text-align: center;
   background-color: rgb(34, 34, 34);
   padding: 35px;
 }
-.aboutUsHome__luxury div .teamGold {
+.aboutUsHome__luxury .divLuxury .teamGold {
   width: 68px;
   height: 50px;
   margin: 25px;
 }
-.aboutUsHome__luxury div .info__title {
+.aboutUsHome__luxury .divLuxury .info__title {
   font-size: 30px;
   line-height: 30px;
   letter-spacing: -0.9px;
   margin-bottom: 20px;
   color: rgb(255, 255, 255);
 }
-.aboutUsHome__luxury div .textRoboto {
+.aboutUsHome__luxury .divLuxury .textRoboto {
   font-family: "roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -945,6 +987,50 @@ footer .copyright p {
   color: rgb(255, 255, 255);
 }
 
+@media only screen and (min-width: 1000px) {
+  .aboutUsHome {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 110px 0 0 0;
+    padding: 90px 0;
+  }
+  .aboutUsHome .containerTeamLuxury {
+    position: relative;
+    display: flex;
+    bottom: 130px;
+    left: 80px;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+  .aboutUsHome .team {
+    flex-direction: column-reverse;
+  }
+  .aboutUsHome__luxury {
+    gap: 30px;
+    top: 30px;
+  }
+  .aboutUsHome__info {
+    margin: 0;
+    padding: 0px 0 0 130px;
+    width: 58%;
+  }
+  .aboutUsHome__info__title {
+    margin-bottom: 14px;
+    font-size: 70px;
+    line-height: 90px;
+    letter-spacing: -2.4px;
+  }
+  .aboutUsHome__info__subTitle {
+    position: absolute;
+    top: -45px;
+    color: rgb(119, 119, 119);
+    font-size: 14px;
+  }
+  .aboutUsHome__info .text {
+    padding-right: 200px;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -1058,11 +1144,11 @@ footer .copyright p {
   display: flex;
   flex-direction: column;
 }
-.date__form__label {
+.date__form__div__label {
   color: rgb(255, 255, 255);
   width: 100%;
 }
-.date__form__input {
+.date__form__div__input {
   position: relative;
   width: 100%;
   height: 40px;
@@ -1077,20 +1163,20 @@ footer .copyright p {
   margin: 15px 0;
   text-indent: 20px;
 }
-.date__form ::-webkit-calendar-picker-indicator {
+.date__form__div ::-webkit-calendar-picker-indicator {
   position: absolute;
   cursor: pointer;
   width: 100%;
   height: 100%;
   opacity: 0;
 }
-.date__form .calendarArrival {
+.date__form__div .calendarArrival {
   position: absolute;
   left: 20px;
   top: 80px;
   pointer-events: none;
 }
-.date__form .calendarDeparture {
+.date__form__div .calendarDeparture {
   position: absolute;
   left: 20px;
   top: 170px;
@@ -1111,6 +1197,32 @@ footer .copyright p {
   margin-top: 30px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .date {
+    padding: 20px;
+  }
+  .date__form {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .date__form__div {
+    position: relative;
+  }
+  .date__form__div .calendarArrival {
+    left: 0px;
+    top: 44px;
+  }
+  .date__form__div .calendarDeparture {
+    left: 0px;
+    top: 44px;
+  }
+  .date button {
+    width: 250px;
+    margin-top: 10px;
+  }
+}
 .menuFoodHome {
   position: relative;
   width: 100%;
@@ -1209,6 +1321,14 @@ footer .copyright p {
   padding: 12px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .roomsHome__title {
+    font-size: 80px;
+  }
+  .roomsHome__subTitle {
+    font-size: 14px;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;

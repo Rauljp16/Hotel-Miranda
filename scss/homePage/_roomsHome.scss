@@ -27,3 +27,16 @@
         padding: 12px;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .roomsHome {
+        &__title {
+            font-size: 80px;
+        }
+
+        &__subTitle {
+            font-size: 14px;
+        }
+
+    }
+}

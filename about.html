@@ -17,37 +17,41 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav>
-      <img id="menuBurguerSvg" src="./svg/menuBurguer.svg" class="header__menuBurguerSvg" alt="menu burguer" />
-      <section class="header__logo">
-        <a href="/" class="iconLogo">H</a>
-        <div class="nameHotel">
-          <p class="p1">HOTEL</p>
-          <p class="p2">MIRANDA</p>
-        </div>
-      </section>
+  <div class="hoverZone" id="hoverZone">
+    <div class="divHeaderDesktop " id="divHeaderDesktop">
+      <header class="header">
+        <nav>
+          <img id="menuBurguerSvg" src="./svg/menuBurguer.svg" class="header__menuBurguerSvg" alt="menu burguer" />
+          <section class="header__logo">
+            <a href="/" class="iconLogo">H</a>
+            <div class="nameHotel">
+              <p class="p1">HOTEL</p>
+              <p class="p2">MIRANDA</p>
+            </div>
+          </section>
 
-      <ul id="menuBurguer" class="menuDesktop">
-        <li>
-          <a href="/about.html" onclick="toggleMenu()">About Us</a>
-        </li>
-        <li>
-          <a href="/rooms.html" onclick="toggleMenu()">Rooms</a>
-        </li>
-        <li>
-          <a href="/offers.html" onclick="toggleMenu()">Offers</a>
-        </li>
-        <li>
-          <a href="/contact.html" onclick="toggleMenu()">Contact</a>
-        </li>
-      </ul>
-      <section class="header__iconSvg">
-        <img src="./svg/account.svg" class="accountSvg" alt="account" />
-        <img src="./svg/search.svg" class="searchSvg" alt="search" />
-      </section>
-    </nav>
-  </header>
+          <ul id="menuBurguer" class="menuDesktop">
+            <li>
+              <a href="/about.html" onclick="toggleMenu()">About Us</a>
+            </li>
+            <li>
+              <a href="/rooms.html" onclick="toggleMenu()">Rooms</a>
+            </li>
+            <li>
+              <a href="/offers.html" onclick="toggleMenu()">Offers</a>
+            </li>
+            <li>
+              <a href="/contact.html" onclick="toggleMenu()">Contact</a>
+            </li>
+          </ul>
+          <section class="header__iconSvg">
+            <img src="./svg/account.svg" class="header__iconSvg__accountSvg" alt="account" />
+            <img src="./svg/search.svg" class="header__iconSvg__searchSvg" alt="search" />
+          </section>
+        </nav>
+      </header>
+    </div>
+  </div>
   <section class="info infoSmall">
     <p class="info__subTitle">THE ULTIMATE LUXURY</p>
     <p class="info__title">About Us</p>

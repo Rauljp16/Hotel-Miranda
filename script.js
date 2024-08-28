@@ -34,12 +34,12 @@ window.addEventListener("load", () => {
   update();
   window.addEventListener("scroll", update);
 });
+
 hoverZone.addEventListener("mouseenter", () => {
   const scrollPercentage =
     (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
   if (scrollPercentage > 0.5 && scrollPercentage < 95) {
     divHeaderDesktop.style.transform = "translateY(0%)";
-    console.log("esta dentro");
   }
 });
 hoverZone.addEventListener("mouseleave", () => {
@@ -47,6 +47,5 @@ hoverZone.addEventListener("mouseleave", () => {
     (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
   if (scrollPercentage > 0.5 && scrollPercentage < 95) {
     divHeaderDesktop.style.transform = "translateY(-150px)";
-    console.log("esta fuera");
   }
 });

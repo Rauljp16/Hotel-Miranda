@@ -1,9 +1,12 @@
 @import "mixins";
 
+.containerInfo {
+    background-color: rgb(51, 51, 51);
+}
+
 .info {
     position: relative;
     padding: 140px 20px;
-    background-color: rgba(51, 51, 51, 1);
     color: rgba(255, 255, 255, 1);
 
     &__subTitle {
@@ -30,4 +33,22 @@
 .infoSmall {
     padding: 120px 20px 60px;
 
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .info {
+        max-width: 900px;
+        left: 14%;
+        padding: 210px 120px 70px 30px;
+
+        &__title {
+            font-size: 120px;
+            font-weight: 400;
+            line-height: 130px;
+            letter-spacing: -3.59px;
+        }
+
+
+    }
 }

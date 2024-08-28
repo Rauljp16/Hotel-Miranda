@@ -2,23 +2,24 @@
 
 
 .aboutUsHome {
+  position: relative;
   width: 100%;
-  color: rgba(255, 255, 255, 1);
+  margin-top: 60px;
 
-  .info {
-    margin-top: 60px;
+  &__info {
+    position: relative;
+    padding: 38px 20px 180px;
+    margin-bottom: -60px;
     background-color: rgba(249, 249, 249, 1);
-    padding: 38px 20px 50px;
 
     &__title {
-      color: rgba(17, 17, 17, 1);
+      @include title(rgba(17, 17, 17, 1));
       margin-bottom: 14px;
-      font-weight: 400;
+      max-width: 500px
     }
 
     &__subTitle {
-      color: rgba(119, 119, 119, 1);
-      width: 100%;
+      @include subTitleArchivo(rgba(119, 119, 119, 1));
       margin-bottom: 30px;
     }
 
@@ -29,29 +30,40 @@
     button {
       @include button(rgba(190, 173, 142, 1), none);
       width: 217px;
-      margin: 23px 0;
+      margin: 23px 0 0 0;
     }
   }
 
+  .containerTeamLuxury {
+    position: relative;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+
   .team {
     position: relative;
-    top: -15px;
-    margin: 0 52px 30px;
-    box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 
     img {
-      width: 270px;
-      height: 300px;
+      width: 100%;
+      height: 100%;
     }
 
     .divTeam {
       padding-bottom: 50px;
+      box-shadow: 0 8px 16px rgba(34, 34, 34, 0.03);
     }
 
     div {
       position: relative;
-      width: 100%;
-      height: 50%;
+      width: 270px;
+      height: 300px;
       text-align: center;
       line-height: 0;
 
@@ -75,6 +87,7 @@
         line-height: 30px;
         letter-spacing: -0.9px;
         margin: 0;
+        color: rgba(17, 17, 17, 1)
       }
 
       .textRoboto {
@@ -85,17 +98,21 @@
   }
 
   &__luxury {
-    line-height: 0;
-    margin: 0 52px 52px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
 
     img {
       width: 100%;
-      height: 300px;
+      height: 100%;
     }
 
     div {
-      width: 100%;
-      height: 50%;
+      width: 270px;
+      height: 300px;
+    }
+
+    .divLuxury {
       text-align: center;
       background-color: rgba(34, 34, 34, 1);
       padding: 35px;
@@ -119,5 +136,60 @@
         // margin: 35px 35px;
       }
     }
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .aboutUsHome {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 110px 0 0 0;
+    padding: 90px 0;
+
+    .containerTeamLuxury {
+      position: relative;
+      display: flex;
+      bottom: 130px;
+      left: 80px;
+      flex-direction: row;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .team {
+      flex-direction: column-reverse;
+    }
+
+    &__luxury {
+      gap: 30px;
+      top: 30px;
+    }
+
+    &__info {
+      margin: 0;
+      //padding: 0 78px 110px 169px;
+      padding: 0px 0 0 130px;
+      width: 58%;
+
+      &__title {
+        margin-bottom: 14px;
+        font-size: 70px;
+        line-height: 90px;
+        letter-spacing: -2.40px;
+
+      }
+
+      &__subTitle {
+        position: absolute;
+        top: -45px;
+        color: rgba(119, 119, 119, 1);
+        font-size: 14px;
+      }
+
+      .text {
+        padding-right: 200px;
+      }
+    }
+
   }
 }
