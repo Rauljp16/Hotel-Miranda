@@ -253,4 +253,32 @@
     }
 
   }
+
+  .slider {
+
+    .swiperFacilitiesHome {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      overflow: visible;
+      max-width: 1200px;
+      margin: 50px auto;
+
+      .swiper-wrapper {
+        display: contents;
+
+      }
+
+      .swiper-slide {
+        flex: none;
+        display: block;
+        width: 100% !important;
+        margin: 0;
+      }
+    }
+
+    .swiper-pagination {
+      display: none;
+    }
+  }
 }

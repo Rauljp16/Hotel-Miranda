@@ -20,32 +20,48 @@ const divHeaderDesktop = document.querySelector("#divHeaderDesktop");
 const hoverZone = document.querySelector("#hoverZone");
 let scrollPercentage;
 
-window.addEventListener("load", () => {
-  const update = () => {
-    scrollPercentage =
-      (window.scrollY / (document.body.scrollHeight - window.innerHeight)) *
-      100;
-    if (scrollPercentage < 0.5 || scrollPercentage > 95) {
-      divHeaderDesktop.style.transform = "translateY(0%)";
-    } else {
-      divHeaderDesktop.style.transform = "translateY(-150px)";
-    }
-  };
-  update();
-  window.addEventListener("scroll", update);
-});
+const update = () => {
+  scrollPercentage =
+    (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+  if (scrollPercentage < 0.5 || scrollPercentage > 95) {
+    divHeaderDesktop.style.transform = "translateY(0%)";
+  } else {
+    divHeaderDesktop.style.transform = "translateY(-150px)";
+  }
+};
 
-hoverZone.addEventListener("mouseenter", () => {
+const hoverZoneEnter = () => {
   const scrollPercentage =
     (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
   if (scrollPercentage > 0.5 && scrollPercentage < 95) {
     divHeaderDesktop.style.transform = "translateY(0%)";
   }
-});
-hoverZone.addEventListener("mouseleave", () => {
+};
+
+const hoverZoneLeave = () => {
   const scrollPercentage =
     (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
   if (scrollPercentage > 0.5 && scrollPercentage < 95) {
     divHeaderDesktop.style.transform = "translateY(-150px)";
   }
-});
+};
+
+const checkSize = () => {
+  if (window.innerWidth >= 1000) {
+    divHeaderDesktop.classList.add("divHeaderDesktop");
+
+    window.addEventListener("scroll", update);
+    hoverZone.addEventListener("mouseenter", hoverZoneEnter);
+    hoverZone.addEventListener("mouseleave", hoverZoneLeave);
+  } else {
+    divHeaderDesktop.classList.remove("divHeaderDesktop");
+    window.removeEventListener("scroll", update);
+    hoverZone.removeEventListener("mouseenter", hoverZoneEnter);
+    hoverZone.removeEventListener("mouseleave", hoverZoneLeave);
+
+    divHeaderDesktop.style.transform = "";
+  }
+};
+
+window.addEventListener("load", checkSize);
+window.addEventListener("resize", checkSize);

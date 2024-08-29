@@ -28,6 +28,11 @@ const swiperFacilitiesHome = new Swiper(".swiperFacilitiesHome", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    1000: {
+      enabled: false,
+    },
+  },
 });
 
 const swiperMenuFoodHome1 = new Swiper(".swiperMenuFoodHome1", {
