@@ -69,13 +69,15 @@
 
 @media only screen and (min-width: 1000px) {
     .date {
-        padding: 20px;
+        padding: 20px 120px 0 100px;
 
         &__form {
+            position: relative;
+            left: 11%;
             flex-direction: row;
             justify-content: space-between;
             max-width: 950px;
-            margin: 0 auto;
+            //margin: 0 auto;
 
             &__div {
                 position: relative;

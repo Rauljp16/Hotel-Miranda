@@ -229,8 +229,8 @@
 @media only screen and (min-width: 1000px) {
   .info {
     max-width: 900px;
-    left: 14%;
-    padding: 210px 120px 70px 30px;
+    left: 10%;
+    padding: 210px 120px 70px 90px;
   }
   .info__title {
     font-size: 120px;
@@ -544,7 +544,7 @@ footer .copyright p {
   margin: 50px 0 20px;
 }
 .slider .swiperRoomsHome {
-  max-width: 1400px;
+  max-width: 1500px;
 }
 .slider .swiperRoomsHome .button-next-roomsHome {
   top: 145px;
@@ -744,13 +744,16 @@ footer .copyright p {
     display: flex;
     flex-direction: column;
   }
+  .slider .swiper-scrollbar {
+    display: none;
+  }
   .slider .swiperFacilitiesHome {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     overflow: visible;
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 50px auto 0;
   }
   .slider .swiperFacilitiesHome .swiper-wrapper {
     display: contents;
@@ -763,6 +766,45 @@ footer .copyright p {
   }
   .slider .swiper-pagination {
     display: none;
+  }
+  .slider .swiperMenuFoodHome1 {
+    max-width: 1138px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  .slider .swiperMenuFoodHome1 .swiper-wrapper .swiper-slide {
+    padding: 0 80px 0 0;
+    margin-top: 16px;
+  }
+  .slider .swiperMenuFoodHome1 .button-next-foodMenu {
+    top: 25px;
+    right: 45px;
+    width: 50px;
+    height: 50px;
+  }
+  .slider .swiperMenuFoodHome1 .button-prev-foodMenu {
+    top: 25px;
+    left: 84%;
+    width: 50px;
+    height: 50px;
+  }
+  .slider .swiperMenuFoodHome1 ::after {
+    font-size: x-small;
+    font-weight: 600;
+  }
+  .slider .swiperMenuFoodHome2 .swiper-slide {
+    padding: 16px 16px 40px;
+    height: 370px;
+  }
+  .slider .swiperMenuFoodHome2 .swiper-slide .img-slider3 {
+    width: auto;
+    height: 370px;
+  }
+  .slider .swiperMenuFoodHome2 .swiper-pagination-bullet-active {
+    background: rgb(190, 173, 142);
+  }
+  .slider .swiperMenuFoodHome2 .swiper-wrapper {
+    margin: 0 0 40px 0;
   }
 }
 .textArchivo {
@@ -879,11 +921,12 @@ footer .copyright p {
     padding: 0;
     position: relative;
     height: 600px;
+    margin-top: 50px;
   }
   .videoHome .videoHome--info {
     position: absolute;
-    width: 660px;
     top: 104px;
+    padding-right: 14%;
   }
   .videoHome__containerVideoHome {
     width: 70%;
@@ -1092,7 +1135,7 @@ footer .copyright p {
     display: flex;
     flex-direction: row-reverse;
     margin: 110px 0 0 0;
-    padding: 90px 0;
+    padding: 90px 0 90px 10%;
   }
   .aboutUsHome .containerTeamLuxury {
     position: relative;
@@ -1113,7 +1156,7 @@ footer .copyright p {
   .aboutUsHome__info {
     margin: 0;
     padding: 0px 0 0 130px;
-    width: 58%;
+    width: 100%;
   }
   .aboutUsHome__info__title {
     margin-bottom: 14px;
@@ -1299,13 +1342,14 @@ footer .copyright p {
 
 @media only screen and (min-width: 1000px) {
   .date {
-    padding: 20px;
+    padding: 20px 120px 0 100px;
   }
   .date__form {
+    position: relative;
+    left: 11%;
     flex-direction: row;
     justify-content: space-between;
     max-width: 950px;
-    margin: 0 auto;
   }
   .date__form__div {
     position: relative;
@@ -1347,10 +1391,24 @@ footer .copyright p {
 .menuFoodHome__containerText .subTitle--containerText {
   margin-bottom: 20px;
 }
-.menuFoodHome__containerText .subTitle--containerText {
-  margin-bottom: 20px;
-}
 
+@media only screen and (min-width: 1000px) {
+  .menuFoodHome__iconSvg {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .menuFoodHome__iconSvg__svg {
+    left: 0px;
+  }
+  .menuFoodHome__containerText {
+    max-width: 1138px;
+    margin: 0 auto -70px;
+  }
+  .menuFoodHome__containerText .title--containerText {
+    font-size: 70px;
+    margin: 26px 0 0 0;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;

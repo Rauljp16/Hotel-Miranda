@@ -45,6 +45,11 @@ const swiperMenuFoodHome1 = new Swiper(".swiperMenuFoodHome1", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    1000: {
+      slidesPerView: 2,
+    },
+  },
 });
 
 const swiperMenuFoodHome2 = new Swiper(".swiperMenuFoodHome2", {
@@ -56,6 +61,12 @@ const swiperMenuFoodHome2 = new Swiper(".swiperMenuFoodHome2", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  breakpoints: {
+    1000: {
+      enabled: false,
+      slidesPerView: 3,
+    },
   },
 });
 
