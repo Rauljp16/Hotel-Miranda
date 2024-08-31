@@ -15,7 +15,6 @@
     padding-left: 22px;
 
     ul {
-      width: 100%;
       position: fixed;
       display: none;
       left: 0;
@@ -123,15 +122,44 @@
       display: flex;
       z-index: 5;
       background-color: transparent;
-      left: 40px;
     }
 
     nav {
       padding-left: 5px;
+      justify-content: space-between;
 
+      ul {
+        width: 53%;
+
+        li {
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    &__logo {
+      .iconLogo {
+        font-size: 35px;
+        width: 65px;
+        height: 65px;
+
+      }
+
+      .nameHotel {
+        .p1 {
+          font-size: 22px;
+        }
+
+        .p2 {
+          font-size: 22px;
+        }
+      }
     }
 
     &__iconSvg {
+      position: relative;
       width: 100px;
       right: 30px;
 
@@ -146,11 +174,6 @@
       }
     }
 
-  }
-
-  .iconLogo {
-    width: 55px;
-    height: 55px;
   }
 
 }

@@ -15,7 +15,6 @@
   padding-left: 22px;
 }
 .header nav ul {
-  width: 100%;
   position: fixed;
   display: none;
   left: 0;
@@ -111,12 +110,30 @@
     display: flex;
     z-index: 5;
     background-color: transparent;
-    left: 40px;
   }
   .header nav {
     padding-left: 5px;
+    justify-content: space-between;
+  }
+  .header nav ul {
+    width: 53%;
+  }
+  .header nav ul li a {
+    font-size: 18px;
+  }
+  .header__logo .iconLogo {
+    font-size: 35px;
+    width: 65px;
+    height: 65px;
+  }
+  .header__logo .nameHotel .p1 {
+    font-size: 22px;
+  }
+  .header__logo .nameHotel .p2 {
+    font-size: 22px;
   }
   .header__iconSvg {
+    position: relative;
     width: 100px;
     right: 30px;
   }
@@ -127,10 +144,6 @@
   .header__iconSvg__searchSvg {
     border: 1px solid rgba(133, 133, 133, 0.2);
     padding: 9px;
-  }
-  .iconLogo {
-    width: 55px;
-    height: 55px;
   }
 }
 .textArchivo {
@@ -273,10 +286,17 @@
   color: rgb(34, 34, 34);
 }
 
+.containerFooter {
+  width: 100%;
+  max-width: 1138px;
+  margin: 0 auto;
+}
+
 footer {
+  position: relative;
   background-image: url("../images/fondo.jpg");
-  margin: 40px 0;
-  padding: 30px 30px;
+  margin: 40px 0 0;
+  padding: 30px 20px 95px;
 }
 footer .logo {
   display: flex;
@@ -376,13 +396,21 @@ footer .contact__container article span {
   color: rgb(119, 119, 119);
 }
 footer .copyright {
+  width: 100%;
   position: absolute;
   left: 0;
-  width: 100%;
+  bottom: 0;
   background-color: rgb(248, 248, 248);
 }
-footer .copyright p {
-  margin: 20px 0 20px 20px;
+footer .copyright__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1138px;
+  padding: 20px;
+  gap: 20px;
+}
+footer .copyright__container p {
   font-family: "roboto", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -400,9 +428,26 @@ footer .copyright p {
     z-index: 6;
     background-color: transparent;
   }
-  .containerFooter {
-    max-width: 1000px;
+  footer .containerFooter {
     display: flex;
+  }
+  footer .containerFooter .containerFooter--desktop {
+    width: 100%;
+  }
+  footer .containerFooter .containerFooter--desktop .footerText {
+    padding-right: 70px;
+  }
+  footer .services article {
+    justify-content: space-between;
+  }
+  footer .contact {
+    padding-left: 105px;
+  }
+  footer .copyright__container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px;
   }
 }
 .textArchivo {
@@ -792,19 +837,27 @@ footer .copyright p {
     font-size: x-small;
     font-weight: 600;
   }
+  .slider .swiperMenuFoodHome2 {
+    max-width: 1137px;
+    margin: auto;
+  }
   .slider .swiperMenuFoodHome2 .swiper-slide {
-    padding: 16px 16px 40px;
+    padding: 16px 0 40px;
     height: 370px;
+    width: 370px;
   }
   .slider .swiperMenuFoodHome2 .swiper-slide .img-slider3 {
-    width: auto;
-    height: 370px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .slider .swiperMenuFoodHome2 .swiper-pagination-bullet-active {
     background: rgb(190, 173, 142);
   }
   .slider .swiperMenuFoodHome2 .swiper-wrapper {
     margin: 0 0 40px 0;
+    gap: 20px;
   }
 }
 .textArchivo {
@@ -1209,6 +1262,8 @@ footer .copyright p {
 }
 
 .benefits {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
   padding-bottom: 40px;
@@ -1241,6 +1296,19 @@ footer .copyright p {
   color: rgb(153, 153, 153);
 }
 
+@media only screen and (min-width: 1000px) {
+  .benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1138px;
+    margin: auto;
+    padding: 0;
+  }
+  .benefits article {
+    padding: 0 40px 40px;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;

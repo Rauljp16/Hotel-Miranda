@@ -1,6 +1,8 @@
 @import "../mixins";
 
 .benefits {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(34, 34, 34, 1);
     color: rgba(255, 255, 255, 1);
     padding-bottom: 40px;
@@ -36,6 +38,21 @@
             font-size: 16px;
             line-height: 22px;
             color: rgba(153, 153, 153, 1);
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .benefits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1138px;
+        margin: auto;
+        padding: 0;
+
+        article {
+            padding: 0 40px 40px;
         }
     }
 }

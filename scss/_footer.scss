@@ -1,9 +1,16 @@
 @import "mixins";
 
+.containerFooter {
+    width: 100%;
+    max-width: 1138px;
+    margin: 0 auto;
+}
+
 footer {
+    position: relative;
     background-image: url("../images/fondo.jpg");
-    margin: 40px 0;
-    padding: 30px 30px;
+    margin: 40px 0 0;
+    padding: 30px 20px 95px;
 
     .logo {
         display: flex;
@@ -110,18 +117,27 @@ footer {
     }
 
     .copyright {
+        width: 100%;
         position: absolute;
         left: 0;
-        width: 100%;
+        bottom: 0;
         background-color: rgba(248, 248, 248, 1);
 
-        p {
-            margin: 20px 0 20px 20px;
-            font-family: "roboto", sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 18px;
-            letter-spacing: -0.5px;
+        &__container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1138px;
+            padding: 20px;
+            gap: 20px;
+
+            p {
+                font-family: "roboto", sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18px;
+                letter-spacing: -0.5px;
+            }
         }
     }
 }
@@ -137,9 +153,38 @@ footer {
         background-color: transparent;
     }
 
-    .containerFooter {
-        max-width: 1000px;
-        //margin: 0 auto;
-        display: flex;
+    footer {
+        .containerFooter {
+            display: flex;
+
+            .containerFooter--desktop {
+                width: 100%;
+
+                .footerText {
+                    padding-right: 70px;
+                }
+            }
+        }
+
+        .services {
+
+            article {
+                justify-content: space-between;
+            }
+        }
+
+        .contact {
+            padding-left: 105px;
+        }
+
+        .copyright {
+
+            &__container {
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0 auto;
+                padding: 30px;
+            }
+        }
     }
 }
