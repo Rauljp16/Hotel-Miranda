@@ -20,7 +20,7 @@
 
 <body>
   <div class="hoverZone" id="hoverZone">
-    <div class="divHeaderDesktop " id="divHeaderDesktop">
+    <div class="divHeaderDesktop" id="divHeaderDesktop">
       <header class="header">
         <nav>
           <img id="menuBurguerSvg" src="./svg/menuBurguer.svg" class="header__menuBurguerSvg" alt="menu burguer" />
@@ -54,14 +54,16 @@
       </header>
     </div>
   </div>
-  <section class="info infoSmall">
-    <p class="info__subTitle">THE ULTIMATE LUXURY</p>
-    <p class="info__title">Our Offers</p>
-    <nav class="breadcrumb">
-      <a class="breadcrumb__link" href="index.html">Home</a>
-      <span class="breadcrumb__divider"> | </span>
-      <p class="breadcrumb__pageActual">Offers</p>
-    </nav>
+  <section class="containerInfo">
+    <div class="info">
+      <p class="info__subTitle info--subTitleSmall"> THE ULTIMATE LUXURY </p>
+      <p class="info__title info--titleSmall">Our Offers</p>
+      <nav class="breadcrumb">
+        <a class="breadcrumb__link" href="/">Home</a>
+        <span class="breadcrumb__divider"> | </span>
+        <p class="breadcrumb__pageActual">Offers</p>
+      </nav>
+    </div>
   </section>
   <section class="offersPage">
     <article class="offer">
@@ -481,84 +483,93 @@
     </section>
   </section>
   <footer>
-    <section class="logo">
-      <p class="iconLogo">H</p>
-      <div class="nameHotel">
-        <p class="p1">HOTEL</p>
-        <p class="p2">MIRANDA</p>
-      </div>
-    </section>
-    <p class="footerText">
-      Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
-      eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-    </p>
-    <section class="rrss">
-      <div>
-        <img src="./svg/facebook.svg" alt="facebook" />
-      </div>
-      <div class="rrss-gold">
-        <img src="./svg/twitter.svg" alt="twitter" />
-      </div>
-      <div>
-        <img src="./svg/behance.svg" alt="behance" />
-      </div>
-      <div>
-        <img src="./svg/linkedIn.svg" alt="linkedIn" />
-      </div>
-      <div>
-        <img src="./svg/youtube.svg" alt="youtube" />
-      </div>
-    </section>
-    <section class="services">
-      <p class="servicesTitle">Services.</p>
-      <article>
-        <ul>
-          <li>+ Resturent & Bar</li>
-          <li>+ Swimming Pool</li>
-          <li>+ Wellness & Spa</li>
-          <li>+ Restaurant</li>
-          <li>+ Conference Room</li>
-          <li>+ Coctail Party House</li>
-        </ul>
-        <ul>
-          <li>+ Gaming Zone</li>
-          <li>+ Marrige Party</li>
-          <li>+ Party Planning</li>
-          <li>+ Tour Consultancy</li>
-        </ul>
-      </article>
-    </section>
-    <section class="contact">
-      <p class="contact__title">Contact Us.</p>
-      <div class="contact__container">
-        <article>
-          <img src="./svg/phone.svg" alt="phone" />
-          <img src="./svg/mail.svg" alt="mail" />
-          <img src="./svg/map.svg" alt="map" />
-        </article>
-        <article>
+    <div class="containerFooter">
+      <div class="containerFooter--desktop">
+        <section class="logo">
+          <p class="iconLogo">H</p>
+          <div class="nameHotel">
+            <p class="p1">HOTEL</p>
+            <p class="p2">MIRANDA</p>
+          </div>
+        </section>
+        <p class="footerText">
+          Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+          eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+        </p>
+        <section class="rrss">
           <div>
-            <p>Phone Number</p>
-            <span>+987 876 765 76 577</span>
+            <img src="./svg/facebook.svg" alt="facebook" />
+          </div>
+          <div class="rrss-gold">
+            <img src="./svg/twitter.svg" alt="twitter" />
           </div>
           <div>
-            <p>Mail</p>
-            <span>Hotel@miranda.es</span>
+            <img src="./svg/behance.svg" alt="behance" />
           </div>
           <div>
-            <p>Address</p>
-            <span>beach paradise</span>
+            <img src="./svg/linkedIn.svg" alt="linkedIn" />
           </div>
-        </article>
+          <div>
+            <img src="./svg/youtube.svg" alt="youtube" />
+          </div>
+        </section>
       </div>
-    </section>
-    <section class="copyright">
-      <p>Copyright By@Example - 2024</p>
-      <p>Terms of use | Privacy Environmental Policy</p>
-    </section>
+      <div class="containerFooter--desktop">
+        <section class="services">
+          <p class="servicesTitle">Services.</p>
+          <article>
+            <ul>
+              <li>+ Resturent & Bar</li>
+              <li>+ Swimming Pool</li>
+              <li>+ Wellness & Spa</li>
+              <li>+ Restaurant</li>
+              <li>+ Conference Room</li>
+              <li>+ Coctail Party House</li>
+            </ul>
+            <ul>
+              <li>+ Gaming Zone</li>
+              <li>+ Marrige Party</li>
+              <li>+ Party Planning</li>
+              <li>+ Tour Consultancy</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+      <div class="containerFooter--desktop">
+        <section class="contact">
+          <p class="contact__title">Contact Us.</p>
+          <div class="contact__container">
+            <article>
+              <img src="./svg/phone.svg" alt="phone" />
+              <img src="./svg/mail.svg" alt="mail" />
+              <img src="./svg/map.svg" alt="map" />
+            </article>
+            <article>
+              <div>
+                <p>Phone Number</p>
+                <span>+987 876 765 76 577</span>
+              </div>
+              <div>
+                <p>Mail</p>
+                <span>Hotel@miranda.es</span>
+              </div>
+              <div>
+                <p>Address</p>
+                <span>beach paradise</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <section class="copyright">
+        <div class="copyright__container">
+          <p>Copyright By@Example - 2024</p>
+          <p>Terms of use | Privacy Environmental Policy</p>
+        </div>
+      </section>
+    </div>
   </footer>
-
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./swiper.js"></script>

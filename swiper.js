@@ -91,6 +91,12 @@ const swiperAbout2 = new Swiper(".swiperAbout2", {
     el: ".swiper-pagination",
     clickable: true,
   },
+  breakpoints: {
+    1000: {
+      enabled: false,
+      slidesPerView: 2,
+    },
+  },
 });
 const swiperRoomsRoom = new Swiper(".swiperRoomsRoom", {
   // Optional parameters

@@ -18,7 +18,7 @@
 
 <body>
   <div class="hoverZone" id="hoverZone">
-    <div class="divHeaderDesktop " id="divHeaderDesktop">
+    <div class="divHeaderDesktop" id="divHeaderDesktop">
       <header class="header">
         <nav>
           <img id="menuBurguerSvg" src="./svg/menuBurguer.svg" class="header__menuBurguerSvg" alt="menu burguer" />
@@ -52,25 +52,32 @@
       </header>
     </div>
   </div>
-  <section class="info infoSmall">
-    <p class="info__subTitle">THE ULTIMATE LUXURY</p>
-    <p class="info__title">About Us</p>
-    <nav class="breadcrumb">
-      <a class="breadcrumb__link" href="/">Home</a>
-      <span class="breadcrumb__divider"> | </span>
-      <p class="breadcrumb__pageActual">About</p>
-    </nav>
+  <section class="containerInfo">
+    <div class="info">
+      <p class="info__subTitle info--subTitleSmall"> THE ULTIMATE LUXURY </p>
+      <p class="info__title info--titleSmall">About Us</p>
+      <nav class="breadcrumb">
+        <a class="breadcrumb__link" href="/">Home</a>
+        <span class="breadcrumb__divider"> | </span>
+        <p class="breadcrumb__pageActual">About</p>
+      </nav>
+    </div>
   </section>
+
   <section class="videoHome videoHome--about">
-    <iframe width="335px" height="270px"
-      src="https://www.youtube.com/embed/Bu3Doe45lcU?si=wtBeVepc7D6BgOBd&amp;start=155&end=180"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p class="videoHome__title title--about">
-      Hello. Our hotel has been present for over 20 years. We make the best
-      for all our customers.
-    </p>
+    <div class="videoHome--aboutContainer">
+      <div class="video--aboutContainer">
+        <iframe width="100%" height="100%"
+          src="https://www.youtube.com/embed/Bu3Doe45lcU?si=wtBeVepc7D6BgOBd&amp;start=155&end=180"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="videoHome__title title--about">
+        Hello. Our hotel has been present for over 20 years. We make the best
+        for all our customers.
+      </p>
+    </div>
   </section>
   <section class="iconInfo">
     <div class="iconInfo__container">
@@ -86,7 +93,11 @@
         <img class="iconContainer__svg" src="./svg/cityGuide.svg" alt="breakfast icon" />
         <p>CITY GUIDE</p>
       </div>
-      <div class="iconInfo__container__item">
+      <div class="iconInfo__container__item item--bbq">
+        <img class="iconContainer__svg" src="./svg/bbq.svg" alt="breakfast icon" />
+        <p>BBQ PARTY</p>
+      </div>
+      <div class="iconInfo__container__item ">
         <img class="iconContainer__svg" src="./svg/luxuryRoom.svg" alt="breakfast icon" />
         <p>LUXURY ROOM</p>
       </div>
@@ -94,20 +105,27 @@
   </section>
   <section class="facilitiesRestaurant">
     <div class="facilitiesRestaurant__container">
-      <img class="facilitiesRestaurant__container__img" src="./images/restaurant.webp" alt="imagen restaurante" />
-      <h3 class="subTitle facilitiesRestaurant__container__info ">RESTAURANT</h3>
-      <H1 class="title facilitiesRestaurant__container__title">Get Restaurant Facilities & Many Other More</H1>
-      <p class="facilitiesRestaurant__container__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tem
-        por incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-      <button class="facilitiesRestaurant__container__button">TAKE A TOUR</button>
+      <div>
+        <img class="facilitiesRestaurant__container__img" src="./images/restaurant.webp" alt="imagen restaurante" />
+      </div>
+      <div class="facilitiesRestaurant__container__text">
+        <h3 class="subTitle facilitiesRestaurant--subtitle ">RESTAURANT</h3>
+        <H1 class="title facilitiesRestaurant--title">Get Restaurant Facilities & Many Other More</H1>
+        <p class="facilitiesRestaurant__container__text__description">Lorem ipsum dolor sit amet, consectetur
+          adipisicing
+          elit, sed
+          do
+          eiusmod tem
+          por incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <button class="facilitiesRestaurant__container__text__button">TAKE A TOUR</button>
+      </div>
     </div>
   </section>
   <section class="facilitiesHome facilitiesAbout">
     <article class="slider sliderAbout1">
       <p class="subTitle subTitle--noButton subTitle--about">FACILITIES</p>
-      <p class="title titleFacilitiesAbout">Core Features</p>
+      <p class="title titleFacilities--about">Core Features</p>
       <div class="swiper swiperAbout1 ">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
@@ -247,82 +265,92 @@
     </div>
   </article>
   <footer>
-    <section class="logo">
-      <p class="iconLogo">H</p>
-      <div class="nameHotel">
-        <p class="p1">HOTEL</p>
-        <p class="p2">MIRANDA</p>
-      </div>
-    </section>
-    <p class="footerText">
-      Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
-      eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-      minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-    </p>
-    <section class="rrss">
-      <div>
-        <img src="./svg/facebook.svg" alt="facebook" />
-      </div>
-      <div class="rrss-gold">
-        <img src="./svg/twitter.svg" alt="twitter" />
-      </div>
-      <div>
-        <img src="./svg/behance.svg" alt="behance" />
-      </div>
-      <div>
-        <img src="./svg/linkedIn.svg" alt="linkedIn" />
-      </div>
-      <div>
-        <img src="./svg/youtube.svg" alt="youtube" />
-      </div>
-    </section>
-    <section class="services">
-      <p class="servicesTitle">Services.</p>
-      <article>
-        <ul>
-          <li>+ Resturent & Bar</li>
-          <li>+ Swimming Pool</li>
-          <li>+ Wellness & Spa</li>
-          <li>+ Restaurant</li>
-          <li>+ Conference Room</li>
-          <li>+ Coctail Party House</li>
-        </ul>
-        <ul>
-          <li>+ Gaming Zone</li>
-          <li>+ Marrige Party</li>
-          <li>+ Party Planning</li>
-          <li>+ Tour Consultancy</li>
-        </ul>
-      </article>
-    </section>
-    <section class="contact">
-      <p class="contact__title">Contact Us.</p>
-      <div class="contact__container">
-        <article>
-          <img src="./svg/phone.svg" alt="phone" />
-          <img src="./svg/mail.svg" alt="mail" />
-          <img src="./svg/map.svg" alt="map" />
-        </article>
-        <article>
+    <div class="containerFooter">
+      <div class="containerFooter--desktop">
+        <section class="logo">
+          <p class="iconLogo">H</p>
+          <div class="nameHotel">
+            <p class="p1">HOTEL</p>
+            <p class="p2">MIRANDA</p>
+          </div>
+        </section>
+        <p class="footerText">
+          Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+          eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+        </p>
+        <section class="rrss">
           <div>
-            <p>Phone Number</p>
-            <span>+987 876 765 76 577</span>
+            <img src="./svg/facebook.svg" alt="facebook" />
+          </div>
+          <div class="rrss-gold">
+            <img src="./svg/twitter.svg" alt="twitter" />
           </div>
           <div>
-            <p>Mail</p>
-            <span>Hotel@miranda.es</span>
+            <img src="./svg/behance.svg" alt="behance" />
           </div>
           <div>
-            <p>Address</p>
-            <span>beach paradise</span>
+            <img src="./svg/linkedIn.svg" alt="linkedIn" />
           </div>
-        </article>
+          <div>
+            <img src="./svg/youtube.svg" alt="youtube" />
+          </div>
+        </section>
       </div>
-    </section>
-    <section class="copyright">
-      <p>Copyright By@Example - 2024</p>
-      <p>Terms of use | Privacy Environmental Policy</p>
-    </section>
+      <div class="containerFooter--desktop">
+        <section class="services">
+          <p class="servicesTitle">Services.</p>
+          <article>
+            <ul>
+              <li>+ Resturent & Bar</li>
+              <li>+ Swimming Pool</li>
+              <li>+ Wellness & Spa</li>
+              <li>+ Restaurant</li>
+              <li>+ Conference Room</li>
+              <li>+ Coctail Party House</li>
+            </ul>
+            <ul>
+              <li>+ Gaming Zone</li>
+              <li>+ Marrige Party</li>
+              <li>+ Party Planning</li>
+              <li>+ Tour Consultancy</li>
+            </ul>
+          </article>
+        </section>
+      </div>
+      <div class="containerFooter--desktop">
+        <section class="contact">
+          <p class="contact__title">Contact Us.</p>
+          <div class="contact__container">
+            <article>
+              <img src="./svg/phone.svg" alt="phone" />
+              <img src="./svg/mail.svg" alt="mail" />
+              <img src="./svg/map.svg" alt="map" />
+            </article>
+            <article>
+              <div>
+                <p>Phone Number</p>
+                <span>+987 876 765 76 577</span>
+              </div>
+              <div>
+                <p>Mail</p>
+                <span>Hotel@miranda.es</span>
+              </div>
+              <div>
+                <p>Address</p>
+                <span>beach paradise</span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+      <section class="copyright">
+        <div class="copyright__container">
+          <p>Copyright By@Example - 2024</p>
+          <p>Terms of use | Privacy Environmental Policy</p>
+        </div>
+      </section>
+    </div>
   </footer>
 
   <script src="./script.js"></script>

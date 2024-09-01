@@ -3,35 +3,61 @@
 .facilitiesRestaurant {
     width: 100%;
     padding: 0 20px;
+    margin-top: 60px;
 
     &__container {
-        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
         box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
+        max-width: 500px;
+        margin: 0 auto;
 
         &__img {
             width: 100%;
-        }
-
-        &__info {
-            margin: 30px 0;
-
-        }
-
-        &__title {
-            font-size: 40px;
-            line-height: 50px;
-            letter-spacing: -1.05px;
+            height: 100%;
         }
 
         &__text {
-            @include textArchivo(rgba(119, 119, 119, 1));
-            margin: 20px 0
-        }
 
-        &__button {
-            @include button(rgba(190, 173, 142, 1), none);
-            width: 216px;
-            margin: 0 20px 20px 0;
+            .facilitiesRestaurant--subtitle {
+                margin: 30px 0;
+
+            }
+
+            .facilitiesRestaurant--title {
+                font-size: 40px;
+                line-height: 50px;
+                letter-spacing: -1.05px;
+                color: #222222
+            }
+
+            &__description {
+                @include textArchivo(rgba(119, 119, 119, 1));
+                margin: 20px 0
+            }
+
+            &__button {
+                @include button(rgba(190, 173, 142, 1), none);
+                width: 216px;
+                margin: 0 20px 20px 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .facilitiesRestaurant {
+
+        &__container {
+            flex-direction: row;
+            max-width: 1138px;
+            padding: 30px;
+
+            &__img {}
+
+            &__text {
+                padding: 20px 0px 20px 40px;
+            }
         }
     }
 }

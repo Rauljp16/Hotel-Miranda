@@ -3,71 +3,79 @@
     padding: 40px 20px 20px;
 }
 
-.roomcard {
-    position: relative;
+.CardContainer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 40px 0;
+    max-width: 1138px;
+    margin: 0 auto;
 
-    &__img {
-        width: 100%;
-        max-width: 335px;
-        height: 55%;
-    }
-
-    &__icons {
+    .roomcard {
         position: relative;
-        z-index: 5;
-        top: -18px;
-        width: 256px;
-        margin: 0 auto;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
-        background-color: rgba(255, 255, 255, 1);
-        box-shadow: 0 8px 16px (rgba(138, 138, 138, 0.05));
-        padding: 12px;
-    }
+        margin: 40px auto;
+        max-width: 500px;
 
-    &__minimal {
-        text-align: center;
-        padding: 10px 15px;
-
-        &__title {
-            font-family: "Old Standard TT", serif;
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 24px;
-            letter-spacing: -0.72px;
+        &__img {
+            width: 100%;
+            max-width: 335px;
+            height: 55%;
         }
 
-        &__subTitle {
-            font-family: "roboto", sans-serif;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 24px;
-            color: rgba(119, 119, 119, 1);
-            margin: 18px 0;
-        }
-
-        &__divPrice {
+        &__icons {
+            position: relative;
+            z-index: 5;
+            top: -18px;
+            width: 256px;
+            margin: 0 auto;
             display: flex;
-            justify-content: center;
-            gap: 18px;
-            font-family: "Archivo", sans-serif;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 17.41px;
-            text-align: right;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 1);
+            box-shadow: 0 8px 16px (rgba(138, 138, 138, 0.05));
+            padding: 12px;
+        }
 
-            &__price {
-                color: rgba(190, 173, 142, 1);
+        &__minimal {
+            text-align: center;
+            padding: 10px 15px;
+
+            &__title {
+                font-family: "Old Standard TT", serif;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.72px;
             }
 
-            &__booking {
-                color: rgba(189, 189, 189, 1);
-                cursor: pointer;
+            &__subTitle {
+                font-family: "roboto", sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                color: rgba(119, 119, 119, 1);
+                margin: 18px 0;
+            }
+
+            &__divPrice {
+                display: flex;
+                justify-content: center;
+                gap: 18px;
+                font-family: "Archivo", sans-serif;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 17.41px;
+                text-align: right;
+
+                &__price {
+                    color: rgba(190, 173, 142, 1);
+                }
+
+                &__booking {
+                    color: rgba(189, 189, 189, 1);
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -76,6 +84,8 @@
 .pagination {
     display: flex;
     justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto;
 
     &__number {
         font-family: "Oswald", sans-serif;
@@ -91,5 +101,11 @@
     .pagination--2 {
         background-color: rgba(190, 173, 142, 1);
         color: rgba(255, 255, 255, 1);
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .CardContainer {
+        flex-direction: row;
     }
 }

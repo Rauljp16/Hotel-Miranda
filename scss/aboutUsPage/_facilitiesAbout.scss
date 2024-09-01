@@ -3,8 +3,8 @@
     background-color: rgba(34, 34, 34, 1);
 }
 
-.titleFacilitiesAbout {
-    color: rgba(255, 255, 255, 1);
+.titleFacilities--about {
+    color: rgba(255, 255, 255, 1) !important;
 }
 
 .subTitle--about {
@@ -21,21 +21,23 @@
 }
 
 .title--about {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1) !important;
 }
 
 .text--about {
-    color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1) !important;
 }
 
 .sliderAbout1 {
     padding: 0 0 40px 0;
+    margin: 0 auto;
 }
 
 .slider {
     position: relative;
 
     .swiperAbout1 {
+        max-width: 500px;
 
         .facilityCard {
             text-align: start;
@@ -78,6 +80,44 @@
         .paginationsAbout1 {
             position: absolute;
             bottom: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .sliderAbout1 {
+        padding: 0 0 70px 0;
+    }
+
+    .subTitle--about {
+        padding: 70px 0 0 0;
+    }
+
+    .slider {
+        .swiperAbout1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            overflow: visible;
+            max-width: 1200px;
+            margin: 50px auto 0;
+            padding: 20px;
+
+            .swiper-wrapper {
+                display: contents;
+
+            }
+
+            .swiper-slide {
+                flex: none;
+                display: block;
+                width: 100% !important;
+                margin: 0;
+            }
+
+            .facilityCard {
+                margin: 0;
+            }
         }
     }
 }
