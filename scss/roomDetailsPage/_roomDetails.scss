@@ -242,12 +242,13 @@
 }
 
 .cancelation--container {
-    max-width: 1138px;
+    max-width: 500px;
     margin: 0 auto;
 }
 
 .cancelation {
     max-width: 770px;
+    margin: 0 auto;
 
     &__title {
         font-family: "Old Standard TT", sans-serif;
@@ -274,7 +275,9 @@
 
 .relatedRooms {
     position: relative;
-    margin: 80px 0;
+    margin: 80px auto;
+    max-width: 500px;
+
 
     .divRelatedTitle {
         border-bottom: 1px solid rgba(241, 241, 241, 1);
@@ -352,4 +355,24 @@
             padding: 60px 40px;
         }
     }
+
+    .cancelation--container {
+        max-width: 1138px;
+    }
+
+    .cancelation {
+        max-width: 770px;
+        margin: 0;
+    }
+
+    .relatedRooms {
+        max-width: 1138px;
+        margin: 80px auto;
+
+        .roomsHome {
+            max-width: 770px;
+        }
+
+    }
+
 }

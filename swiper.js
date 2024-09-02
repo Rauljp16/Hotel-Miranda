@@ -108,4 +108,27 @@ const swiperRoomsRoom = new Swiper(".swiperRoomsRoom", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    1000: {
+      enabled: false,
+      slidesPerView: 2,
+    },
+  },
+});
+const swiperOfferRoom = new Swiper(".swiperOfferRoom", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    1000: {
+      enabled: false,
+      slidesPerView: 3,
+    },
+  },
 });

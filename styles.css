@@ -2332,12 +2332,13 @@ footer .copyright__container p {
 }
 
 .cancelation--container {
-  max-width: 1138px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
 .cancelation {
   max-width: 770px;
+  margin: 0 auto;
 }
 .cancelation__title {
   font-family: "Old Standard TT", sans-serif;
@@ -2361,7 +2362,8 @@ footer .copyright__container p {
 
 .relatedRooms {
   position: relative;
-  margin: 80px 0;
+  margin: 80px auto;
+  max-width: 500px;
 }
 .relatedRooms .divRelatedTitle {
   border-bottom: 1px solid rgb(241, 241, 241);
@@ -2421,6 +2423,20 @@ footer .copyright__container p {
     box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.2705882353);
     padding: 60px 40px;
   }
+  .cancelation--container {
+    max-width: 1138px;
+  }
+  .cancelation {
+    max-width: 770px;
+    margin: 0;
+  }
+  .relatedRooms {
+    max-width: 1138px;
+    margin: 80px auto;
+  }
+  .relatedRooms .roomsHome {
+    max-width: 770px;
+  }
 }
 .slider {
   text-align: center;
@@ -2474,7 +2490,37 @@ footer .copyright__container p {
   line-height: 24px;
   margin-bottom: 12px;
 }
+.slider .swiperRoomsRoom .swiper-slide .minimal__divPrice {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.slider .swiperRoomsRoom .swiper-slide .minimal__divPrice__price {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: rgb(190, 173, 142);
+  font-size: 16px;
+  line-height: 17.41px;
+}
+.slider .swiperRoomsRoom .swiper-slide .minimal__divPrice__booking {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  margin-bottom: 38px;
+  color: #BDBDBD;
+  letter-spacing: 0;
+  text-decoration: none;
+}
 
+@media only screen and (min-width: 1000px) {
+  .slider .swiperRoomsRoom .swiper-wrapper {
+    gap: 20px;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
@@ -2510,12 +2556,18 @@ footer .copyright__container p {
 }
 
 .offersPage {
-  margin: 40px 20px;
+  margin: 40px 0px;
+}
+
+.containerOffer {
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .offer {
   box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1);
-  margin: 30px 0;
+  margin: 30px 20px;
+  max-width: 500px;
 }
 .offer__divImg {
   position: relative;
@@ -2559,28 +2611,28 @@ footer .copyright__container p {
   line-height: 20px;
 }
 
-.descriptionoffer {
+.descriptionOffer {
   margin: 10px 20px;
 }
-.descriptionoffer .title--descriptionoffer {
+.descriptionOffer .title--descriptionOffer {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -1.4px;
   color: rgb(34, 34, 34);
   margin: 16px 0;
 }
-.descriptionoffer__text {
+.descriptionOffer__text {
   font-family: "roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   color: rgb(119, 119, 119);
 }
-.descriptionoffer .divAmenitiesoffer {
+.descriptionOffer .divAmenitiesOffer {
   border: none;
   margin: 0;
 }
-.descriptionoffer__button {
+.descriptionOffer__button {
   background-color: rgb(189, 172, 141);
   border: none;
   color: rgb(255, 255, 255);
@@ -2630,6 +2682,94 @@ footer .copyright__container p {
   padding: 45px 20px 30px 20px;
 }
 
+@media only screen and (min-width: 1000px) {
+  .containerOffer {
+    max-width: 1138px;
+  }
+}
+.slider {
+  text-align: center;
+}
+.slider .swiperOfferRoom .swiper-button-next {
+  top: 120px;
+  right: 2px;
+  background-color: rgb(190, 173, 142);
+  color: rgb(255, 255, 255);
+  width: 32px;
+  height: 32px;
+}
+.slider .swiperOfferRoom .swiper-button-prev {
+  top: 120px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(17, 17, 17);
+  width: 32px;
+  height: 32px;
+  left: 2px;
+}
+.slider .swiperOfferRoom ::after {
+  font-size: x-small;
+}
+.slider .swiperOfferRoom .imgSlideRoom {
+  width: 100%;
+  height: 218px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.slider .swiperOfferRoom .swiper-slide .minimal {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+}
+.slider .swiperOfferRoom .swiper-slide .minimal__title {
+  font-family: "Old Standard TT", serif;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+  margin-bottom: 38px;
+  color: rgb(34, 34, 34);
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.slider .swiperOfferRoom .swiper-slide .minimal__subTitle {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.slider .swiperOfferRoom .swiper-slide .minimal__divPrice {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.slider .swiperOfferRoom .swiper-slide .minimal__divPrice__price {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: rgb(190, 173, 142);
+  font-size: 16px;
+  line-height: 17.41px;
+}
+.slider .swiperOfferRoom .swiper-slide .minimal__divPrice__booking {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  margin-bottom: 38px;
+  color: #BDBDBD;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .slider .swiperOfferRoom .swiper-wrapper {
+    gap: 20px;
+  }
+}
 .textArchivo {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
