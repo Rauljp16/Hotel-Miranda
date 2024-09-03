@@ -2,6 +2,8 @@
     text-align: center;
 
     .swiperOfferRoom {
+        max-width: 500px;
+
         .swiper-button-next {
             top: 120px;
             right: 2px;
@@ -63,6 +65,7 @@
                         @include subTitleArchivo(#BDBDBD);
                         letter-spacing: 0;
                         text-decoration: none;
+                        margin-bottom: 0
                     }
                 }
 
@@ -76,6 +79,8 @@
         // text-align: center;
 
         .swiperOfferRoom {
+            max-width: 1138px;
+
             .swiper-wrapper {
                 gap: 20px;
             }

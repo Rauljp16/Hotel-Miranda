@@ -2575,38 +2575,42 @@ footer .copyright__container p {
 .offer__divImg__img {
   width: 100%;
 }
-.offer__divImg__divPrices {
-  position: absolute;
+.offer__divPrices {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
   right: 15px;
   bottom: 16px;
   font-family: "Archivo", sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
+  margin: -50px 0 0 0;
 }
-.offer__divImg__divPrices__old {
+.offer__divPrices__old {
   display: flex;
   color: rgb(192, 166, 116);
   justify-content: flex-end;
   align-items: flex-end;
 }
-.offer__divImg__divPrices__old__number {
+.offer__divPrices__old__number {
   font-size: 23px;
   text-decoration: line-through;
 }
-.offer__divImg__divPrices__old__text {
+.offer__divPrices__old__text {
   font-size: 11px;
   line-height: 20px;
 }
-.offer__divImg__divPrices__new {
+.offer__divPrices__new {
   display: flex;
   color: rgb(224, 61, 99);
   justify-content: flex-end;
   align-items: flex-end;
 }
-.offer__divImg__divPrices__new__number {
+.offer__divPrices__new__number {
   font-size: 30px;
 }
-.offer__divImg__divPrices__new__text {
+.offer__divPrices__new__text {
   font-size: 12px;
   line-height: 20px;
 }
@@ -2614,23 +2618,12 @@ footer .copyright__container p {
 .descriptionOffer {
   margin: 10px 20px;
 }
-.descriptionOffer .title--descriptionOffer {
+.descriptionOffer__title .title--descriptionOffer {
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -1.4px;
   color: rgb(34, 34, 34);
   margin: 16px 0;
-}
-.descriptionOffer__text {
-  font-family: "roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: rgb(119, 119, 119);
-}
-.descriptionOffer .divAmenitiesOffer {
-  border: none;
-  margin: 0;
 }
 .descriptionOffer__button {
   background-color: rgb(189, 172, 141);
@@ -2646,6 +2639,17 @@ footer .copyright__container p {
   width: 216px;
   height: 60px;
   margin: 10px 0 32px 0;
+}
+.descriptionOffer .containerText__text {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: rgb(119, 119, 119);
+}
+.descriptionOffer .containerText .divAmenitiesOffer {
+  border: none;
+  margin: 0;
 }
 
 .popularRooms {
@@ -2683,12 +2687,77 @@ footer .copyright__container p {
 }
 
 @media only screen and (min-width: 1000px) {
+  .offersPage {
+    margin: 80px 0px 40px 0px;
+  }
   .containerOffer {
     max-width: 1138px;
+  }
+  .offer {
+    max-width: 1138px;
+  }
+  .offer__divImg {
+    z-index: -1;
+  }
+  .offer__divPrices {
+    right: 110px;
+    bottom: -18px;
+    margin: 0px 0 0 0;
+    gap: 10px;
+  }
+  .offer__divPrices__old__number {
+    font-size: 28px;
+  }
+  .offer__divPrices__old__text {
+    font-size: 12px;
+  }
+  .offer__divPrices__new__number {
+    font-size: 40px;
+  }
+  .offer__divPrices__new__text {
+    font-size: 16px;
+  }
+  .descriptionOffer {
+    background-color: #ffffff;
+    z-index: 1;
+    margin: -120px 50px 0;
+    padding: 50px;
+    border-top: 7px solid #bdac8d;
+  }
+  .descriptionOffer__title .title--descriptionOffer {
+    font-size: 48px;
+  }
+  .descriptionOffer .containerText {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    border-top: 4px solid rgba(224, 224, 224, 0.431372549);
+    padding-top: 40px;
+    margin-top: 30px;
+  }
+  .descriptionOffer .containerText__text {
+    width: 50%;
+  }
+  .descriptionOffer .containerText .amenitiesRoom--container {
+    margin: 0;
+  }
+  .descriptionOffer .containerText .gridIcon--offer {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+  .descriptionOffer .containerText .amenitiesRoom--offer {
+    margin: 0;
+    width: 50%;
+  }
+  .descriptionOffer__button {
+    margin: -10px 0 10px 0;
   }
 }
 .slider {
   text-align: center;
+}
+.slider .swiperOfferRoom {
+  max-width: 500px;
 }
 .slider .swiperOfferRoom .swiper-button-next {
   top: 120px;
@@ -2763,9 +2832,13 @@ footer .copyright__container p {
   color: #BDBDBD;
   letter-spacing: 0;
   text-decoration: none;
+  margin-bottom: 0;
 }
 
 @media only screen and (min-width: 1000px) {
+  .slider .swiperOfferRoom {
+    max-width: 1138px;
+  }
   .slider .swiperOfferRoom .swiper-wrapper {
     gap: 20px;
   }
@@ -2807,10 +2880,20 @@ footer .copyright__container p {
 .contactPage {
   margin: 20px 20px;
 }
-
-.hotelDetails .imgMap {
+.contactPage__divImg {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.contactPage__divImg__imgMap {
   width: 100%;
   margin: 20px 0 30px 0;
+}
+
+.hotelDetails {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .detail {
@@ -2853,11 +2936,49 @@ footer .copyright__container p {
 
 .formContact {
   text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.formContact__containerInput__two__div {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+.formContact__containerInput__two__div__text {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 20px 0 20px 50px;
+  border: none;
+  outline: none;
+}
+.formContact__containerInput__two__div__number {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 20px 0 20px 50px;
+  border: none;
+  outline: none;
+}
+.formContact__containerInput__two__div__email {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 20px 0 20px 50px;
+  border: none;
+  outline: none;
+}
+.formContact__containerInput__two__div__svg {
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 .formContact__div {
   position: relative;
   width: 100%;
   margin: 20px 0;
+}
+.formContact__div__svg {
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 .formContact__div__text {
   background-color: rgb(248, 248, 248);
@@ -2865,25 +2986,6 @@ footer .copyright__container p {
   padding: 20px 0 20px 50px;
   border: none;
   outline: none;
-}
-.formContact__div__number {
-  background-color: rgb(248, 248, 248);
-  width: 100%;
-  padding: 20px 0 20px 50px;
-  border: none;
-  outline: none;
-}
-.formContact__div__email {
-  background-color: rgb(248, 248, 248);
-  width: 100%;
-  padding: 20px 0 20px 50px;
-  border: none;
-  outline: none;
-}
-.formContact__div__svg {
-  position: absolute;
-  left: 20px;
-  top: 20px;
 }
 .formContact__div .message {
   background-color: rgb(248, 248, 248);
@@ -2913,6 +3015,102 @@ footer .copyright__container p {
   cursor: pointer;
 }
 
+@media only screen and (min-width: 1000px) {
+  .contactPage__divImg {
+    max-width: 1138px;
+  }
+  .hotelDetails {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1138px;
+    padding: 0 20px;
+  }
+  .formContact {
+    max-width: 1000px;
+  }
+  .formContact__containerInput {
+    display: flex;
+    gap: 20px;
+  }
+  .formContact__containerInput__two {
+    width: 100%;
+  }
+  .formContact__containerInput__two__div {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .formContact__containerInput__two__div__text {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    padding: 20px 0 20px 50px;
+    border: none;
+    outline: none;
+  }
+  .formContact__containerInput__two__div__number {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    padding: 20px 0 20px 50px;
+    border: none;
+    outline: none;
+  }
+  .formContact__containerInput__two__div__email {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    padding: 20px 0 20px 50px;
+    border: none;
+    outline: none;
+  }
+  .formContact__containerInput__two__div__svg {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .formContact__div {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+  }
+  .formContact__div__svg {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .formContact__div__text {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    padding: 20px 0 20px 50px;
+    border: none;
+    outline: none;
+  }
+  .formContact__div .message {
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    height: 150px;
+    border: none;
+  }
+  .formContact__div .message::-moz-placeholder {
+    font-family: sans-serif;
+  }
+  .formContact__div .message::placeholder {
+    font-family: sans-serif;
+  }
+  .formContact .buttonFormContact {
+    width: 258px;
+    height: 60px;
+    margin: 20px 0 40px;
+    background-color: rgb(190, 173, 142);
+    border: none;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    font-family: "Archivo", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 2.8px;
+    cursor: pointer;
+  }
+}
 html,
 * {
   box-sizing: border-box;
